@@ -1,42 +1,37 @@
 PODS:
-  - Expecta (1.0.6)
-  - "Expecta+Snapshots (3.1.1)":
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - Specta (1.0.7)
-  - WBasicLibrary (0.1.0)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - WBasicLibrary (0.1.0):
+    - AFNetworking
 
 DEPENDENCIES:
-  - Expecta
-  - "Expecta+Snapshots"
-  - FBSnapshotTestCase
-  - Specta
   - WBasicLibrary (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - Expecta
-    - "Expecta+Snapshots"
-    - FBSnapshotTestCase
-    - Specta
+    - AFNetworking
 
 EXTERNAL SOURCES:
   WBasicLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
-  WBasicLibrary: c36847ed3c03fe1e688940f958843f6a2052a0d5
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  WBasicLibrary: 1094be4a8a441a576e5190b3218f9dd581992837
 
-PODFILE CHECKSUM: 7ec2ae0387776903e05a5ee72b06ec2c483fe481
+PODFILE CHECKSUM: 99ef694806dc846e0e5cf0ca8f45d329c9a77420
 
 COCOAPODS: 1.5.0
