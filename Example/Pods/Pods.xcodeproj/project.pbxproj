@@ -82,6 +82,27 @@
 		1C07DE7620F4949F00130B93 /* WHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C07DE3920F4949F00130B93 /* WHUDView.m */; };
 		1C07DE7720F4949F00130B93 /* WHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C07DE3920F4949F00130B93 /* WHUDView.m */; };
 		1C07DE7820F4949F00130B93 /* WHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C07DE3920F4949F00130B93 /* WHUDView.m */; };
+		1C53811A20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53811B20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53811C20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53811D20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53811E20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53811F20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53812020F84AA800DB6A6E /* UILabel+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */; };
+		1C53812120F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812220F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812320F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812420F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812520F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812620F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812720F84AA800DB6A6E /* WBasicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C53811820F84AA800DB6A6E /* WBasicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C53812820F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812920F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812A20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812B20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812C20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812D20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
+		1C53812E20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */; };
 		1CACC5DB20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5D920F834BE00DB08B7 /* UIColor+Whandler.h */; };
 		1CACC5DC20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5D920F834BE00DB08B7 /* UIColor+Whandler.h */; };
 		1CACC5DD20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5D920F834BE00DB08B7 /* UIColor+Whandler.h */; };
@@ -96,6 +117,76 @@
 		1CACC5E620F834BE00DB08B7 /* UIColor+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5DA20F834BE00DB08B7 /* UIColor+Whandler.m */; };
 		1CACC5E720F834BE00DB08B7 /* UIColor+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5DA20F834BE00DB08B7 /* UIColor+Whandler.m */; };
 		1CACC5E820F834BE00DB08B7 /* UIColor+Whandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5DA20F834BE00DB08B7 /* UIColor+Whandler.m */; };
+		1CACC5EB20F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5EC20F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5ED20F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5EE20F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5EF20F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5F020F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5F120F835BE00DB08B7 /* UIView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */; };
+		1CACC5F220F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F320F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F420F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F520F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F620F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F720F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5F820F835BE00DB08B7 /* UIView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */; };
+		1CACC5FD20F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC5FE20F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC5FF20F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC60020F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC60120F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC60220F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC60320F8375B00DB08B7 /* NSData+AES256_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */; };
+		1CACC60420F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60520F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60620F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60720F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60820F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60920F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60A20F8375B00DB08B7 /* NSData+Base64_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */; };
+		1CACC60B20F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC60C20F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC60D20F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC60E20F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC60F20F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC61020F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC61120F8375B00DB08B7 /* NSData+Base64_.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */; };
+		1CACC61220F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61320F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61420F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61520F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61620F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61720F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61820F8375B00DB08B7 /* NSData+AES256_.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */; };
+		1CACC61B20F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC61C20F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC61D20F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC61E20F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC61F20F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC62020F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC62120F838EE00DB08B7 /* NSString+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */; };
+		1CACC62220F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62320F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62420F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62520F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62620F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62720F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC62820F838EE00DB08B7 /* NSString+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */; };
+		1CACC63B20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC63C20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC63D20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC63E20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC63F20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC64020F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC64120F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */; };
+		1CACC64220F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64320F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64420F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64520F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64620F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64720F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
+		1CACC64820F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */; };
 		1D676445A1446539D4B722E6EF0C802A /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 71AF85B6558D634E3F383BA6AAEF3267 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1F2EA0CA554C8EBBC9F878B7E6920B4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3435632E518FBB1B6085FE5AF4B8E /* Foundation.framework */; };
 		20A2A483CDC911D6DB2EAD12444D1406 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC5EEA6B4746F1531DD69BC488E69F4 /* SPTTestSuite.m */; };
@@ -328,8 +419,21 @@
 		1C07DE3720F4949F00130B93 /* NSObject+Whandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Whandler.h"; path = "WBasicLibrary/Classes/NSObject+Whandler.h"; sourceTree = "<group>"; };
 		1C07DE3820F4949F00130B93 /* WMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WMessage.m; path = WBasicLibrary/Classes/WMessage.m; sourceTree = "<group>"; };
 		1C07DE3920F4949F00130B93 /* WHUDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WHUDView.m; path = WBasicLibrary/Classes/WHUDView.m; sourceTree = "<group>"; };
+		1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+WHandler.h"; path = "WBasicLibrary/Classes/UILabel+WHandler.h"; sourceTree = "<group>"; };
+		1C53811820F84AA800DB6A6E /* WBasicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBasicHeader.h; path = WBasicLibrary/Classes/WBasicHeader.h; sourceTree = "<group>"; };
+		1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+WHandler.m"; path = "WBasicLibrary/Classes/UILabel+WHandler.m"; sourceTree = "<group>"; };
 		1CACC5D920F834BE00DB08B7 /* UIColor+Whandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+Whandler.h"; path = "WBasicLibrary/Classes/UIColor+Whandler.h"; sourceTree = "<group>"; };
 		1CACC5DA20F834BE00DB08B7 /* UIColor+Whandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Whandler.m"; path = "WBasicLibrary/Classes/UIColor+Whandler.m"; sourceTree = "<group>"; };
+		1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+WHandler.h"; path = "WBasicLibrary/Classes/UIView+WHandler.h"; sourceTree = "<group>"; };
+		1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+WHandler.m"; path = "WBasicLibrary/Classes/UIView+WHandler.m"; sourceTree = "<group>"; };
+		1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES256_.m"; path = "WBasicLibrary/Classes/NSData+AES256_.m"; sourceTree = "<group>"; };
+		1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64_.h"; path = "WBasicLibrary/Classes/NSData+Base64_.h"; sourceTree = "<group>"; };
+		1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64_.m"; path = "WBasicLibrary/Classes/NSData+Base64_.m"; sourceTree = "<group>"; };
+		1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AES256_.h"; path = "WBasicLibrary/Classes/NSData+AES256_.h"; sourceTree = "<group>"; };
+		1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+WHandler.h"; path = "WBasicLibrary/Classes/NSString+WHandler.h"; sourceTree = "<group>"; };
+		1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+WHandler.m"; path = "WBasicLibrary/Classes/NSString+WHandler.m"; sourceTree = "<group>"; };
+		1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSMutableArray+WHandler.h"; path = "WBasicLibrary/Classes/NSMutableArray+WHandler.h"; sourceTree = "<group>"; };
+		1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSMutableArray+WHandler.m"; path = "WBasicLibrary/Classes/NSMutableArray+WHandler.m"; sourceTree = "<group>"; };
 		1E0332642D2749A7960481BA0E53F8FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1E859878194A3B4E7101C8AEFED08E88 /* WBasicLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBasicLibrary-dummy.m"; sourceTree = "<group>"; };
 		222277628576E6CB279473688BA88F01 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
@@ -635,13 +739,26 @@
 		3EF1D9C6F4BEA92E627034A974B37344 /* WBasicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				1C53811820F84AA800DB6A6E /* WBasicHeader.h */,
+				1C07DE3220F4949E00130B93 /* MicroDefinetion.h */,
+				1C53811720F84AA800DB6A6E /* UILabel+WHandler.h */,
+				1C53811920F84AA800DB6A6E /* UILabel+WHandler.m */,
+				1CACC5FC20F8375B00DB08B7 /* NSData+AES256_.h */,
+				1CACC5F920F8375A00DB08B7 /* NSData+AES256_.m */,
+				1CACC5FA20F8375A00DB08B7 /* NSData+Base64_.h */,
+				1CACC5FB20F8375B00DB08B7 /* NSData+Base64_.m */,
+				1CACC5E920F835BE00DB08B7 /* UIView+WHandler.h */,
+				1CACC5EA20F835BE00DB08B7 /* UIView+WHandler.m */,
 				1CACC5D920F834BE00DB08B7 /* UIColor+Whandler.h */,
 				1CACC5DA20F834BE00DB08B7 /* UIColor+Whandler.m */,
-				1C07DE3220F4949E00130B93 /* MicroDefinetion.h */,
 				1C07DE3320F4949E00130B93 /* NSDate+Whandler.h */,
 				1C07DE3420F4949E00130B93 /* NSDate+Whandler.m */,
 				1C07DE3720F4949F00130B93 /* NSObject+Whandler.h */,
 				1C07DE3120F4949E00130B93 /* NSObject+Whandler.m */,
+				1CACC61920F838EE00DB08B7 /* NSString+WHandler.h */,
+				1CACC61A20F838EE00DB08B7 /* NSString+WHandler.m */,
+				1CACC63920F8416400DB08B7 /* NSMutableArray+WHandler.h */,
+				1CACC63A20F8416400DB08B7 /* NSMutableArray+WHandler.m */,
 				1C07DE3520F4949F00130B93 /* WHUDView.h */,
 				1C07DE3920F4949F00130B93 /* WHUDView.m */,
 				1C07DE3620F4949F00130B93 /* WMessage.h */,
@@ -952,10 +1069,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C53811E20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
+				1CACC5EF20F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
+				1CACC63F20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
+				1CACC61620F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
 				1C07DE4520F4949F00130B93 /* MicroDefinetion.h in Headers */,
 				06B4E0A1225F54D0C1D7024ACCA52F77 /* Pods-WBasicLibrary_Tests-umbrella.h in Headers */,
 				1CACC5DF20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
 				1C07DE4C20F4949F00130B93 /* NSDate+Whandler.h in Headers */,
+				1CACC60820F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
+				1CACC61F20F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1C53812520F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				1C07DE5A20F4949F00130B93 /* WHUDView.h in Headers */,
 				1C07DE6120F4949F00130B93 /* WMessage.h in Headers */,
 				1C07DE6820F4949F00130B93 /* NSObject+Whandler.h in Headers */,
@@ -972,12 +1096,16 @@
 				7A27CAFCB586104AA102A9C161AD0978 /* SpectaDSL.h in Headers */,
 				1C07DE6220F4949F00130B93 /* WMessage.h in Headers */,
 				1CACC5E020F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
+				1C53811F20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
 				1C07DE6920F4949F00130B93 /* NSObject+Whandler.h in Headers */,
 				C1DF1378F608A031627FBF81B6A9C6E5 /* SpectaTypes.h in Headers */,
+				1CACC60920F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
 				4A571204986D316637D43D3F93DCAC77 /* SpectaUtility.h in Headers */,
 				6A725E2BDA6D302C9F30439A6390689C /* SPTCallSite.h in Headers */,
+				1CACC61720F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
 				A41034714C779552383D238C48FC4FDA /* SPTCompiledExample.h in Headers */,
 				86A40D9CFD9051779B220F53DE991DCA /* SPTExample.h in Headers */,
+				1CACC5F020F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
 				8EDC47391C8554AD5C7A91C4D5AFC5F2 /* SPTExampleGroup.h in Headers */,
 				D7BF9558E071FDF8643CE2B50276B777 /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
 				1C07DE4620F4949F00130B93 /* MicroDefinetion.h in Headers */,
@@ -985,7 +1113,10 @@
 				87C61FE4EBA517506085582BD4175CCA /* SPTSharedExampleGroups.h in Headers */,
 				1C07DE5B20F4949F00130B93 /* WHUDView.h in Headers */,
 				827762B596901D18DAD29830875E1922 /* SPTSpec.h in Headers */,
+				1CACC64020F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
 				2E81617C064F3E68A7A2A9E6A370E073 /* SPTTestSuite.h in Headers */,
+				1CACC62020F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1C53812620F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				86365A8DEDA7C9315120DED5EC7F23DC /* XCTest+Private.h in Headers */,
 				03890D59600D45E6E9463700F9B11FFE /* XCTestCase+Specta.h in Headers */,
 			);
@@ -996,6 +1127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				214F8D721940BD9AA4BAB0E5AE2E8A1C /* EXPBlockDefinedMatcher.h in Headers */,
+				1CACC61B20F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
 				1C07DE5620F4949F00130B93 /* WHUDView.h in Headers */,
 				5D4700451D6C9DFC6D5FFB86671EA2AC /* EXPDefines.h in Headers */,
 				39461DAB3DE2637F4AE2BA94F19DCF2B /* EXPDoubleTuple.h in Headers */,
@@ -1010,6 +1142,7 @@
 				E61E28B50602F353D95914765667969F /* EXPMatcherHelpers.h in Headers */,
 				4861F2FFD5A4306E7B7BD3CD0D8199AC /* EXPMatchers+beCloseTo.h in Headers */,
 				B1487AC2DD502CCE46631C123E047D28 /* EXPMatchers+beFalsy.h in Headers */,
+				1CACC63B20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
 				8C14546CF091E0A5B1F0F37F576990B8 /* EXPMatchers+beginWith.h in Headers */,
 				7E81176499F06E523CE3039B08AB5051 /* EXPMatchers+beGreaterThan.h in Headers */,
 				BBC7D292529B7E5DB953171190E321AF /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
@@ -1018,6 +1151,9 @@
 				FC223395BCEE46EB920CECD38AFD4402 /* EXPMatchers+beInTheRangeOf.h in Headers */,
 				41CC214541946B82A25CE427BB81ABEA /* EXPMatchers+beKindOf.h in Headers */,
 				E233F5CF4BF16CFB539804C4E995C355 /* EXPMatchers+beLessThan.h in Headers */,
+				1CACC61220F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
+				1C53811A20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
+				1CACC5EB20F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
 				AA5060419F1307F5F03ECBEA70DB186C /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
 				64C46AF200F2347115A0DF2799D6E403 /* EXPMatchers+beNil.h in Headers */,
 				1C07DE4120F4949F00130B93 /* MicroDefinetion.h in Headers */,
@@ -1026,6 +1162,7 @@
 				FC6474103AA989EBD5368772037BE0BB /* EXPMatchers+beSupersetOf.h in Headers */,
 				1CACC5DB20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
 				F74F0174B426B7EAB501A3788E5D381F /* EXPMatchers+beTruthy.h in Headers */,
+				1CACC60420F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
 				DC423A980C991970F4D637AC4C47D863 /* EXPMatchers+conformTo.h in Headers */,
 				E3355DB3F63F6FE79FD8DD6188B0B3A4 /* EXPMatchers+contain.h in Headers */,
 				87AE70A44BD8E8676B2A3EDB6E334138 /* EXPMatchers+endWith.h in Headers */,
@@ -1038,6 +1175,7 @@
 				B3F189747A7A3CEDA9200CB2749AC7D8 /* EXPMatchers+raiseWithReason.h in Headers */,
 				DED9AE33B24B462D4B44FE94383B35F4 /* EXPMatchers+respondTo.h in Headers */,
 				9CAFC7DAE2E661FC92393E5CC55D1D61 /* EXPMatchers.h in Headers */,
+				1C53812120F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				60CD83FA1B2BF6E93B59834C1E0CBEF0 /* EXPUnsupportedObject.h in Headers */,
 				DB8F3665E9E382DF52E0DCB4DECE5EAE /* NSObject+Expecta.h in Headers */,
 				5922E3B61E351E2A21095BD92E4FE8AC /* NSValue+Expecta.h in Headers */,
@@ -1048,8 +1186,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC60620F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
 				1C07DE6620F4949F00130B93 /* NSObject+Whandler.h in Headers */,
 				1C07DE4A20F4949F00130B93 /* NSDate+Whandler.h in Headers */,
+				1C53812320F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				8D49114979B44DF683A9A964565E0FE6 /* FBSnapshotTestCase-umbrella.h in Headers */,
 				31328536635BDC034D4E43B11CA846BD /* FBSnapshotTestCase.h in Headers */,
 				0676595134A6036819E78D0404919486 /* FBSnapshotTestCasePlatform.h in Headers */,
@@ -1058,10 +1198,15 @@
 				5D95DC370FE619787EA993FF91CA51EE /* UIApplication+StrictKeyWindow.h in Headers */,
 				3849993FDFE7642E4BEF1096B047FB86 /* UIImage+Compare.h in Headers */,
 				1CACC5DD20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
+				1CACC63D20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
+				1CACC61D20F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1CACC61420F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
 				1C07DE5F20F4949F00130B93 /* WMessage.h in Headers */,
 				1C07DE4320F4949F00130B93 /* MicroDefinetion.h in Headers */,
 				26BBC63406C6863BE6DD27C64A70CB42 /* UIImage+Diff.h in Headers */,
 				D180489445C2C507332A6EE964ADA1E5 /* UIImage+Snapshot.h in Headers */,
+				1C53811C20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
+				1CACC5ED20F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1069,10 +1214,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C53812020F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
+				1CACC5F120F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
+				1CACC64120F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
+				1CACC61820F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
 				1C07DE4720F4949F00130B93 /* MicroDefinetion.h in Headers */,
 				EB0ADB2E8A7438EE4EFFF15D332BFA66 /* WBasicLibrary-umbrella.h in Headers */,
 				1CACC5E120F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
 				1C07DE4E20F4949F00130B93 /* NSDate+Whandler.h in Headers */,
+				1CACC60A20F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
+				1CACC62120F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1C53812720F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				1C07DE5C20F4949F00130B93 /* WHUDView.h in Headers */,
 				1C07DE6320F4949F00130B93 /* WMessage.h in Headers */,
 				1C07DE6A20F4949F00130B93 /* NSObject+Whandler.h in Headers */,
@@ -1083,10 +1235,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C53811D20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
+				1CACC5EE20F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
+				1CACC63E20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
+				1CACC61520F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
 				1C07DE4420F4949F00130B93 /* MicroDefinetion.h in Headers */,
 				8D36757DA469BDEE35A84E604FF95E39 /* Pods-WBasicLibrary_Example-umbrella.h in Headers */,
 				1CACC5DE20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
 				1C07DE4B20F4949F00130B93 /* NSDate+Whandler.h in Headers */,
+				1CACC60720F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
+				1CACC61E20F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1C53812420F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				1C07DE5920F4949F00130B93 /* WHUDView.h in Headers */,
 				1C07DE6020F4949F00130B93 /* WMessage.h in Headers */,
 				1C07DE6720F4949F00130B93 /* NSObject+Whandler.h in Headers */,
@@ -1097,14 +1256,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC60520F8375B00DB08B7 /* NSData+Base64_.h in Headers */,
 				1C07DE4920F4949F00130B93 /* NSDate+Whandler.h in Headers */,
 				1C07DE6520F4949F00130B93 /* NSObject+Whandler.h in Headers */,
 				1C07DE5E20F4949F00130B93 /* WMessage.h in Headers */,
 				1C07DE5720F4949F00130B93 /* WHUDView.h in Headers */,
+				1CACC5EC20F835BE00DB08B7 /* UIView+WHandler.h in Headers */,
+				1C53812220F84AA800DB6A6E /* WBasicHeader.h in Headers */,
 				DE4EF1ED618D31CA16938565A1CA0607 /* Expecta+Snapshots-umbrella.h in Headers */,
 				CDBF7F2D23165CAB8B3819A256A49F0A /* ExpectaObject+FBSnapshotTest.h in Headers */,
 				1C07DE4220F4949F00130B93 /* MicroDefinetion.h in Headers */,
+				1CACC61320F8375B00DB08B7 /* NSData+AES256_.h in Headers */,
+				1CACC61C20F838EE00DB08B7 /* NSString+WHandler.h in Headers */,
+				1CACC63C20F8416400DB08B7 /* NSMutableArray+WHandler.h in Headers */,
 				1CACC5DC20F834BE00DB08B7 /* UIColor+Whandler.h in Headers */,
+				1C53811B20F84AA800DB6A6E /* UILabel+WHandler.h in Headers */,
 				EDF3CEAAF7922F570A5AD95B005C84F8 /* EXPMatchers+FBSnapshotTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1279,12 +1445,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				47BA77226056D790A2964605F468D6EA /* FBSnapshotTestCase-dummy.m in Sources */,
+				1CACC60D20F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				C516B672FFC9DB635E0E53DA8FC9CF88 /* FBSnapshotTestCase.m in Sources */,
+				1C53812A20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
 				1C07DE5120F4949F00130B93 /* NSDate+Whandler.m in Sources */,
 				F0873AA02837D34381D156267B9EB005 /* FBSnapshotTestCasePlatform.m in Sources */,
 				57C1DAC24BEE6C12B29AAE68DD3EBEC7 /* FBSnapshotTestController.m in Sources */,
 				754197D184C23A19146DB4C9B3B90050 /* SwiftSupport.swift in Sources */,
+				1CACC5FF20F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
+				1CACC62420F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				47EC7BD047C906B92B85399E097E258E /* UIApplication+StrictKeyWindow.m in Sources */,
+				1CACC64420F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
 				1C07DE3C20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				98CF4E57A36540E13153A545546A1D11 /* UIImage+Compare.m in Sources */,
 				1C07DE7420F4949F00130B93 /* WHUDView.m in Sources */,
@@ -1292,6 +1463,7 @@
 				75DF265A4FEC4E42582B8570194CB583 /* UIImage+Diff.m in Sources */,
 				1CACC5E420F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				E972E6647713D21A0F21BDAD1816AA29 /* UIImage+Snapshot.m in Sources */,
+				1CACC5F420F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1305,15 +1477,21 @@
 				1C07DE3F20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				6F1C8C2851E8B7476992360408E05B40 /* SpectaUtility.m in Sources */,
 				146D2FD2E3B98DA591885219099F2A4A /* SPTCallSite.m in Sources */,
+				1CACC62720F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				255345DF9F3F6DDC70B0ABAF2775324B /* SPTCompiledExample.m in Sources */,
 				B376B4A777F62028AF0965D93658413E /* SPTExample.m in Sources */,
 				5386920B6032F8686000D909CFF26041 /* SPTExampleGroup.m in Sources */,
+				1CACC5F720F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
+				1CACC60220F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
 				1C07DE5420F4949F00130B93 /* NSDate+Whandler.m in Sources */,
 				1CACC5E720F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				1C07DE7020F4949F00130B93 /* WMessage.m in Sources */,
 				9695B31D33EA0EC9CFB42B9D8ABC447D /* SPTSharedExampleGroups.m in Sources */,
 				FCDA06700D1989687F2471414453A57A /* SPTSpec.m in Sources */,
+				1C53812D20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
+				1CACC61020F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				20A2A483CDC911D6DB2EAD12444D1406 /* SPTTestSuite.m in Sources */,
+				1CACC64720F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
 				7F1209D2DD89FBCDABDA3CDBB0DDB49D /* XCTestCase+Specta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1322,12 +1500,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC60F20F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				1C07DE3E20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				1C07DE6F20F4949F00130B93 /* WMessage.m in Sources */,
 				1CACC5E620F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				1C07DE7620F4949F00130B93 /* WHUDView.m in Sources */,
 				EB071C057D285E63647455AAABB7D798 /* Pods-WBasicLibrary_Tests-dummy.m in Sources */,
+				1CACC64620F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
+				1CACC62620F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				1C07DE5320F4949F00130B93 /* NSDate+Whandler.m in Sources */,
+				1CACC60120F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
+				1CACC5F620F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
+				1C53812C20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1335,12 +1519,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC61120F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				1C07DE4020F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				1C07DE7120F4949F00130B93 /* WMessage.m in Sources */,
 				1CACC5E820F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				1C07DE7820F4949F00130B93 /* WHUDView.m in Sources */,
 				A000F3DE6A68F75D50E9CCC304D79C3D /* WBasicLibrary-dummy.m in Sources */,
+				1CACC64820F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
+				1CACC62820F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				1C07DE5520F4949F00130B93 /* NSDate+Whandler.m in Sources */,
+				1CACC60320F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
+				1CACC5F820F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
+				1C53812E20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1348,12 +1538,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC60E20F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				1C07DE3D20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				1C07DE6E20F4949F00130B93 /* WMessage.m in Sources */,
 				1CACC5E520F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				1C07DE7520F4949F00130B93 /* WHUDView.m in Sources */,
 				3697877A1B0BC4B74539A34B03183702 /* Pods-WBasicLibrary_Example-dummy.m in Sources */,
+				1CACC64520F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
+				1CACC62520F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				1C07DE5220F4949F00130B93 /* NSDate+Whandler.m in Sources */,
+				1CACC60020F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
+				1CACC5F520F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
+				1C53812B20F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1371,11 +1567,14 @@
 				5E4F55D319FF771D658CCE335E7CB498 /* EXPFloatTuple.m in Sources */,
 				150503B99F77D3D8897EFFC68C09A351 /* EXPMatcherHelpers.m in Sources */,
 				9A0ADF06F5B6BC3A70EDE1285BAF9346 /* EXPMatchers+beCloseTo.m in Sources */,
+				1CACC64220F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
+				1CACC5FD20F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
 				8220368E5F7EA70947BAD2B6F216C61B /* EXPMatchers+beFalsy.m in Sources */,
 				A037AD9C808583B3EC9F49B3EEDA588A /* EXPMatchers+beginWith.m in Sources */,
 				FF394D6FEA84206182301180AE4CB957 /* EXPMatchers+beGreaterThan.m in Sources */,
 				C14CD98EE4DDC0B7689F058D5B79CC47 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
 				CD22121B77F0F8E2B6A58AF6226038C2 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				1C53812820F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
 				1C07DE3A20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				778C9F1A1715E05313578E39AB46726E /* EXPMatchers+beInstanceOf.m in Sources */,
 				508B6D0572C0C3B4A3E019B814595D4A /* EXPMatchers+beInTheRangeOf.m in Sources */,
@@ -1385,11 +1584,13 @@
 				CD66900813CFE317343F5A4053AE73EC /* EXPMatchers+beNil.m in Sources */,
 				2916D75F69E777954F5BF46AE63C52C0 /* EXPMatchers+beSubclassOf.m in Sources */,
 				AC0AB78F3A7629ED1C7F3F82BBB3F471 /* EXPMatchers+beSupersetOf.m in Sources */,
+				1CACC60B20F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
 				98571BE17A46245CA1717CF9157A0807 /* EXPMatchers+beTruthy.m in Sources */,
 				51FCC9EDD6B60BF63B5EF7CAC94CCF23 /* EXPMatchers+conformTo.m in Sources */,
 				9EA076D25036A0F4765FF3FB57CF4A6A /* EXPMatchers+contain.m in Sources */,
 				285C6F6BE59E632CB219CD98B4EDC1AA /* EXPMatchers+endWith.m in Sources */,
 				E6D59CAA2A6E134A4643254406ED11F2 /* EXPMatchers+equal.m in Sources */,
+				1CACC5F220F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
 				C676818DADAC76EE2FDC5533CBF3648A /* EXPMatchers+haveCountOf.m in Sources */,
 				BC530A8234C398F9F3AD1A1D41670B65 /* EXPMatchers+match.m in Sources */,
 				1C07DE6B20F4949F00130B93 /* WMessage.m in Sources */,
@@ -1400,6 +1601,7 @@
 				1C07DE7220F4949F00130B93 /* WHUDView.m in Sources */,
 				A0612BA825C81CE45266B214DF3A8BCB /* EXPMatchers+respondTo.m in Sources */,
 				AE7BBD46BA00A9AC69249ADA56402162 /* EXPUnsupportedObject.m in Sources */,
+				1CACC62220F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
 				A6CC81FC886EE8FF27EF4DD48D6F8F56 /* NSValue+Expecta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1408,11 +1610,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CACC64320F8416400DB08B7 /* NSMutableArray+WHandler.m in Sources */,
 				1C07DE5020F4949F00130B93 /* NSDate+Whandler.m in Sources */,
 				2CC183AE5C5A4EA8EE0E14768F464BBB /* Expecta+Snapshots-dummy.m in Sources */,
+				1CACC62320F838EE00DB08B7 /* NSString+WHandler.m in Sources */,
+				1CACC5F320F835BE00DB08B7 /* UIView+WHandler.m in Sources */,
 				1CACC5E320F834BE00DB08B7 /* UIColor+Whandler.m in Sources */,
 				1C07DE7320F4949F00130B93 /* WHUDView.m in Sources */,
 				6C88FB17C3AE49E50ABF4C36176B55BB /* ExpectaObject+FBSnapshotTest.m in Sources */,
+				1CACC60C20F8375B00DB08B7 /* NSData+Base64_.m in Sources */,
+				1C53812920F84AA800DB6A6E /* UILabel+WHandler.m in Sources */,
+				1CACC5FE20F8375B00DB08B7 /* NSData+AES256_.m in Sources */,
 				1C07DE6C20F4949F00130B93 /* WMessage.m in Sources */,
 				1C07DE3B20F4949F00130B93 /* NSObject+Whandler.m in Sources */,
 				0D3FBF37E9E7829108F70F4D5658918A /* EXPMatchers+FBSnapshotTest.m in Sources */,

@@ -87,7 +87,7 @@
 
  @return 返回当前的时间戳
  */
-+ (NSInteger) getNowTimeStamp;
++ (NSInteger) nowTimeStamp;
 {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
     NSDateFormatter *formatter = [self formatterWithType:@(WSystemDateTimeFormat_TimeSnap)];
@@ -102,8 +102,8 @@
  @param formatter 需要的时间格式(可以是枚举，也可以是自定义的字符串)
  @return 返回s数
  */
-+ (NSInteger) getTimeStampWithDate:(id)date
-                         formatter:(id)formatter;
++ (NSInteger) timeStampWithDate:(id)date
+                      formatter:(id)formatter;
 {
         //获取dateformmater
     NSDateFormatter *dateFormatter;

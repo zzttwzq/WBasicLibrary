@@ -9,4 +9,12 @@
 
 @interface UIColor (Whandler)
 
+/**
+ hex颜色字符串转 uicolor
+
+ @param hexString 颜色的hex值
+ @return 返回uicolor
+ */
++ (UIColor *) colorWithHexString: (NSString *) hexString;
+
 @end

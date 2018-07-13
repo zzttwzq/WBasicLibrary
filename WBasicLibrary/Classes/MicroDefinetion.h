@@ -21,10 +21,16 @@
 
 #import "NSDate+Whandler.h"     //日期分类
 #import "NSObject+Whandler.h"   //运行时分类
+#import "UIView+WHandler.h"     //view扩展分类
+#import "UIColor+Whandler.h"    //color扩展分类
+#import "NSData+AES256_.h"      //data的分类
+#import "NSData+Base64_.h"      //data的分类
+#import "NSString+WHandler.h"   //字符串的分类
+#import "NSMutableArray+WHandler.h"  //数组的分类
 
-//=======================================================================================
+//==================================== 常用的宏定义 ==========================================
 #pragma mark - 常用的宏定义
-//常用的宏定义
+//==================================== 常用的宏定义 ==========================================
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 //#define NavBarHeight [WTool getNavbarHeight]
@@ -49,9 +55,9 @@
 //升级成功提示
 #define UPDATE_LATER @"UPDATE_LATER"
 
-//=======================================================================================
-#program mark - 常用方法
-
+//================================== 常用方法 ==============================================
+#pragma mark - 常用的宏定义
+//================================== 常用方法 ==============================================
 #define NavBarHeight [WTool getNavbarHeight]
 #define BottomHeight [WTool getBottomHeight]
 #define isIPHoneX [WTool isiPhoneX]
@@ -80,12 +86,11 @@
 //弧度转角度
 #define RADIANS_TO_DEGREES(radians) (radians * (180.0 / M_PI))
 
-
-//=======================================================================================
-#program mark - 显示消息
-
-#define SHOW_SUCCESS_MESSAGE(_MESSAGE_) [MessageTool showSuccessMessage:_MESSAGE_];
-#define SHOW_INFO_MESSAGE(_MESSAGE_) [MessageTool showInfoMessage:_MESSAGE_];
-#define SHOW_ERROR_MESSAGE(_MESSAGE_) [MessageTool showErrorMessage:_MESSAGE_];
+//================================== 显示消息 ==============================================
+#pragma mark - 常用的宏定义
+//================================== 显示消息 ==============================================
+#define SHOW_SUCCESS_MESSAGE(_MESSAGE_) [WMessage showSuccessMessage:_MESSAGE_];
+#define SHOW_INFO_MESSAGE(_MESSAGE_) [WMessage showInfoMessage:_MESSAGE_];
+#define SHOW_ERROR_MESSAGE(_MESSAGE_) [WMessage showErrorMessage:_MESSAGE_];
 
 #endif /* Definetion_h */

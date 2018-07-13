@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MicroDefinetion.h"
 
 //toast位置
 typedef NS_ENUM(NSInteger,FYMESSAGE_POSITION) {
