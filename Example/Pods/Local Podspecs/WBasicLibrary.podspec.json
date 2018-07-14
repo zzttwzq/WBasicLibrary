@@ -1,7 +1,7 @@
 {
   "name": "WBasicLibrary",
-  "version": "0.1.0",
-  "summary": "A short description of WBasicLibrary.",
+  "version": "0.3.1",
+  "summary": "iOS开发基础的扩展库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zzttwzq/WBasicLibrary",
   "license": {
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/zzttwzq/WBasicLibrary.git",
-    "tag": "0.1.0"
+    "tag": "0.3.1"
   },
   "platforms": {
     "ios": "9.0"

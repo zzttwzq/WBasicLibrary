@@ -18,8 +18,12 @@
 #import "NSObject+Whandler.h"
 #import "NSString+WHandler.h"
 #import "UIColor+Whandler.h"
+#import "UIImage+WHandler.h"
 #import "UILabel+WHandler.h"
 #import "UIView+WHandler.h"
+#import "UIViewController+BasicHandler.h"
+#import "UIViewController+TableHandler.h"
+#import "UIViewController+WebHandler.h"
 #import "WBasicHeader.h"
 
 FOUNDATION_EXPORT double WBasicLibraryVersionNumber;

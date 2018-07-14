@@ -1,5 +1,5 @@
 PODS:
-  - WBasicLibrary (0.1.0)
+  - WBasicLibrary (0.3.1)
 
 DEPENDENCIES:
   - WBasicLibrary (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WBasicLibrary: dff661a9381831a1995e966361f395c32e4ecac0
+  WBasicLibrary: b21f2a1e16a6bc5ae1b97d51ae6a6adeed724ffc
 
 PODFILE CHECKSUM: 7c141b8fb749f47fc78d14708ab56cb26939e1ca
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
