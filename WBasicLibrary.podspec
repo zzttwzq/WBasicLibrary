@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBasicLibrary'
-  s.version          = '0.3.0'
+  s.version          = '0.3.1'
   s.summary          = 'iOS开发基础的扩展库'
 
 # This description is used to generate tags and improve search results.
