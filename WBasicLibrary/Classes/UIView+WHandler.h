@@ -23,7 +23,7 @@
  @param className 类名
  @return 子view
  */
-- (UIView*)subViewOfClassName:(NSString*)className;
+- (UIView*) subViewOfClassName:(NSString*)className;
 
 
 /**
@@ -37,31 +37,31 @@
  @param lineColor 线的颜色
  @param isVertical 水平还是垂直（默认no，水平）
  */
-- (void)drawDashLineWithPosition:(CGPoint)position
-                      lineHeight:(float)lineHeight
-                       lineWidth:(float)lineWidth
-                 shortLineLength:(int)shortLineLength
-                     lineSpacing:(int)lineSpacing
-                       lineColor:(UIColor *)lineColor
-                      isVertical:(BOOL)isVertical;
+- (void) drawDashLineWithPosition:(CGPoint)position
+                       lineHeight:(float)lineHeight
+                        lineWidth:(float)lineWidth
+                  shortLineLength:(int)shortLineLength
+                      lineSpacing:(int)lineSpacing
+                        lineColor:(UIColor *)lineColor
+                       isVertical:(BOOL)isVertical;
 
 
 
 /**
- 旋转视图
+ 根据选择位置旋转视图
 
  @param rotate 旋转方向
  */
--(void)rotateWithUIImageOrientation:(UIImageOrientation)rotate;
+- (void) rotateWithUIImageOrientation:(UIImageOrientation)rotate;
 
 
 
 /**
- 旋转视图
+ 顺时针旋转视图
 
  @param degress 角度
  */
--(void)rotateWithDegress:(NSInteger)degress;
+- (void) clockwiseRotate:(NSInteger)degress;
 
 
 /**
@@ -70,6 +70,15 @@
  @param rect 位置
  @param color 颜色
  */
--(void)addLineWithRect:(CGRect)rect
-                 color:(UIColor *)color;
+- (void) addLineWithRect:(CGRect)rect
+                   color:(UIColor *)color;
+
+/**
+ 添加虚化效果
+
+ @param effects 效果的颜色
+ */
+- (void) addBlurEffectStyle:(UIBlurEffectStyle)effects;
+
+
 @end

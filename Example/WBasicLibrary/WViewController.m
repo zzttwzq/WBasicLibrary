@@ -7,7 +7,8 @@
 //
 
 #import "WViewController.h"
-//#import <WBasicLibrary/wba>
+#import <WBasicLibrary/WBasicHeader.h>
+#import "wang.h"
 
 @interface WViewController ()
 
@@ -19,7 +20,26 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake((ScreenWidth-50)/2, 100, 50, 40);
+    btn.backgroundColor = [UIColor redColor];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
+
+-(void)click
+{
+//    UIView *view = VIEW_WITH_RECT(100, 100, 100, 100);
+//    view.backgroundColor = [UIColor orangeColor];
+//    [self.view addSubview:view];
+
+//    [view drawDashLineWithPosition:CGPointMake(0, 0) lineHeight:1 lineWidth:view.width shortLineLength:2 lineSpacing:5 lineColor:[UIColor redColor] isVertical:NO];
+
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -89,6 +89,7 @@
 - (UIView*)subViewOfClassName:(NSString*)className;
 {
     for (UIView* subView in self.subviews) {
+
         if ([NSStringFromClass(subView.class) isEqualToString:className]) {
             return subView;
         }
@@ -106,53 +107,56 @@
 /**
  画点虚线
 
- @param position 线开始的位置
- @param lineHeight 线的高度
- @param lineWidth 线的宽度
- @param shortLineLength 小短线的宽度
- @param lineSpacing 小短线的间距
+ @param rect 线的位置和大小
+ @param lineWidth 短线的宽度
+ @param lineSpace 短线的间距
  @param lineColor 线的颜色
  @param isVertical 水平还是垂直（默认no，水平）
  */
-- (void)drawDashLineWithPosition:(CGPoint)position
-                      lineHeight:(float)lineHeight
-                       lineWidth:(float)lineWidth
-                 shortLineLength:(int)shortLineLength
-                     lineSpacing:(int)lineSpacing
-                       lineColor:(UIColor *)lineColor
-                      isVertical:(BOOL)isVertical;
+- (void)drawDashLineWithRect:(CGRect)rect
+                   lineWidth:(float)lineWidth
+                  lineSpace:(float)lineSpace
+                   lineColor:(UIColor *)lineColor
+                  isVertical:(BOOL)isVertical;
 {
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
     [shapeLayer setBounds:self.bounds];
     [shapeLayer setFillColor:[UIColor clearColor].CGColor];
 
-        // 设置虚线颜色
+    // 设置虚线颜色
     [shapeLayer setStrokeColor:lineColor.CGColor];
 
-        // 设置虚线宽度
+    // 设置虚线宽度
     [shapeLayer setLineJoin:kCALineJoinRound];
 
-        // 设置线宽，线间距
-    [shapeLayer setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:shortLineLength], [NSNumber numberWithInt:lineSpacing], nil]];
+    // 设置线宽，线间距
+    [shapeLayer setLineDashPattern:[NSArray arrayWithObjects:[NSNumber numberWithInt:lineWidth], [NSNumber numberWithInt:lineSpace], nil]];
 
-        // 设置路径
+    // 设置路径
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, 0, 0);
-    if (isVertical == YES) {
+//    if (isVertical == YES) {
+//
+//        [shapeLayer setPosition:position];
+//        [shapeLayer setLineWidth:lineWidth];
+//        CGPathAddLineToPoint(path, NULL, 0, lineHeight);
+//    }else{
+//
+//        [shapeLayer setPosition:position];
+//        [shapeLayer setLineWidth:lineWidth];
+//        CGPathAddLineToPoint(path, NULL, lineWidth, 0);
+//    }
 
-        [shapeLayer setPosition:position];
-        [shapeLayer setLineWidth:lineWidth];
-        CGPathAddLineToPoint(path, NULL, 0, lineHeight);
-    }else{
 
-        [shapeLayer setPosition:position];
-        [shapeLayer setLineWidth:lineWidth];
-        CGPathAddLineToPoint(path, NULL, lineWidth, 0);
-    }
+    [shapeLayer setPosition:rect.origin];
+    [shapeLayer setLineWidth:lineWidth];
+    CGPathAddLineToPoint(path, NULL, 0, rect.size.height);
+
+
     [shapeLayer setPath:path];
     CGPathRelease(path);
 
-        // 把绘制好的虚线添加上来
+    // 把绘制好的虚线添加上来
     [self.layer addSublayer:shapeLayer];
 }
 
@@ -185,7 +189,7 @@
 
  @param degress 角度
  */
--(void)rotateWithDegress:(NSInteger)degress;
+-(void)clockwiseRotate:(NSInteger)degress;
 {
     self.transform = CGAffineTransformMakeRotation(degress/180.0 * M_PI);
 }
@@ -204,5 +208,20 @@
     line.backgroundColor = color;
 
     [self addSubview:line];
+}
+
+
+/**
+ 添加虚化效果
+
+ @param effects 效果的颜色
+ */
+- (void) addBlurEffectStyle:(UIBlurEffectStyle)effects;
+{
+    UIBlurEffect *effect = [UIBlurEffect effectWithStyle:effects];
+    UIVisualEffectView *effectView = [[UIVisualEffectView alloc] initWithEffect:effect];
+    effectView.frame = self.bounds;
+
+    [self addSubview:effectView];
 }
 @end

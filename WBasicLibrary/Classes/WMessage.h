@@ -24,15 +24,7 @@ typedef NS_ENUM(NSInteger,FYMESSAGE_ANIMATION) {
 
 @interface WMessage : NSObject
 
-#pragma mark - 显示hud消息
-/**
- 实例化
-
- @return 实例化
- */
-+ (WMessage *)sharedInstance;
-
-
+#pragma mark - 显示吐司消息
 /**
  吐司消息
 
@@ -53,44 +45,6 @@ typedef NS_ENUM(NSInteger,FYMESSAGE_ANIMATION) {
 fromBottomPosition:(FYMESSAGE_POSITION)position
            isWhite:(BOOL)isWhite Animat:(BOOL)Animat;
 
-/**
- 显示错误消息
-
- @param errorMessage 错误的消息
- */
-+(void)showErrorMessage:(NSString *)errorMessage;
-
-
-/**
- 显示提示消息
-
- @param infoMessage 提示消息
- */
-+(void)showInfoMessage:(NSString *)infoMessage;
-
-
-/**
- 显示成功消息
-
- @param successMessage 显示成功消息
- */
-+(void)showSuccessMessage:(NSString *)successMessage;
-
-
-
-/**
- 显示等待框
- */
-+(void)showLoading;
-
-
-
-/**
- 取消等待框
- */
-+(void)dismissLoading;
-
-
 
 #pragma mark - 显示系统消息
 /**
@@ -109,6 +63,7 @@ fromBottomPosition:(FYMESSAGE_POSITION)position
                             message:(NSString *)message
                             actions:(NSArray *)actions
                       comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
+
 
 #pragma mark - 显示alert提示框
 /**

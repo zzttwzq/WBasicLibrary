@@ -10,14 +10,13 @@
 
 @interface NSObject (Whandler)
 
-
-#pragma mark - 获取类操作
+#pragma mark - 动态获取对象信息
 /**
  获取当前对象的属性名称数组
 
  @return NSArray 性名称数组
  */
--(NSArray *)getObjectPropName;
+-(NSArray *)getPropertyNames;
 
 
 /**
@@ -25,15 +24,16 @@
 
  @return NSDictionary 包含属性名称和值的字典
  */
--(NSDictionary *)getObjectPropertiesAndValues;
+-(NSDictionary *)getPropertiesAndValues;
 
 
 /**
  获取当前对象的属性名称和值（属性名称都是小写）
 
+ @param isLowercase 是否是小写，如果no 就是大写
  @return NSDictionary 包含小写属性名称和值的字典
  */
--(NSDictionary *)getObjectPropertiesLowercaseAndValues;
+-(NSDictionary *)getPropertiesAndValuesWithLowercase:(BOOL)isLowercase;
 
 
 /**
@@ -41,7 +41,7 @@
 
  @return 返回一个包含属性名称和类型的字典
  */
--(NSDictionary *)getObjectPropertiesAndTypes;
+-(NSDictionary *)getPropertiesAndTypes;
 
 
 /**
@@ -49,27 +49,23 @@
 
  @return 类方法的名称数组
  */
-+(NSArray *)getClassMethodName;
++(NSArray *)getInstenceMethods;
+
 
 #pragma mark - 赋值类操作
 /**
- 给当前对象的某个属性赋值(kvc)
+ 用字典设置对象的数据
 
- @param key 属性
- @param value 值
+ @param dict 要设置的字典
  */
--(void)setObjWithKey:(NSString *)key value:(id)value;
+- (void) setObjectWithDict:(NSDictionary *)dict;
 
 
 /**
- 使用字典包含的属性和值给对象赋值
+ 安全的动态设置对象数据（如果要设置的数据包含父类的属性，会出现设置不了的情况）
 
- @param dic 包含的属性和值给对象的字典
+ @param dict 要设置的字典
  */
--(void)setObjWithDic:(NSDictionary *)dic;
-
-#pragma mark - 绑定方法或属性
-//@property (nonatomic,copy) NSString *linkKey;
-
+- (void) safeSetWithDict:(NSDictionary *)dict;
 
 @end

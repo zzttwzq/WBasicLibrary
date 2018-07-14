@@ -10,4 +10,8 @@
 
 #import "MicroDefinetion.h"
 
+
+#import "WHUDView.h"
+#import "WMessage.h"
+
 #endif /* WBasicHeader_h */

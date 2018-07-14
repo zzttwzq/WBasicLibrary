@@ -8,6 +8,18 @@
 #import <UIKit/UIKit.h>
 #import "MicroDefinetion.h"
 
+//typedef NS_ENUM(NSInteger,WLableTextPosition) {
+//    WLableTextPosition_top_left,
+//    WLableTextPosition_top_center,
+//    WLableTextPosition_top_right,
+//    WLableTextPosition_middle_left,
+//    WLableTextPosition_middle_center,
+//    WLableTextPosition_middle_right,
+//    WLableTextPosition_bottom_left,
+//    WLableTextPosition_bottom_center,
+//    WLableTextPosition_bottom_right,
+//};
+
 @interface UILabel (WHandler)
 
 /**
@@ -41,8 +53,8 @@
  @param maxWidth 宽度固定
  @param text 要调整的字符串
  */
--(void)adjustWithMaxWidth:(float)maxWidth
-                     text:(NSString *)text;
+- (void) adjustWithMaxWidth:(float)maxWidth
+                       text:(NSString *)text;
 
 
 /**
@@ -50,7 +62,6 @@
 
  @param text 要调整的字符串
  */
--(void)adjustWithText:(NSString *)text;
-
+- (void) adjustWithText:(NSString *)text;
 
 @end

@@ -85,13 +85,12 @@
 /**
  获取时间
 
- @return 返回当前的时间戳
+ @return 返回秒数
  */
 + (NSInteger) nowTimeStamp;
 {
-    NSDate *date = [NSDate dateWithTimeIntervalSince1970:0];
-    NSDateFormatter *formatter = [self formatterWithType:@(WSystemDateTimeFormat_TimeSnap)];
-    return [[formatter stringFromDate:date] integerValue];
+    NSDate *date = [NSDate date];
+    return [date timeIntervalSince1970];
 }
 
 
@@ -100,12 +99,12 @@
 
  @param date 时间字符串 或 日期对象
  @param formatter 需要的时间格式(可以是枚举，也可以是自定义的字符串)
- @return 返回s数
+ @return 返回秒数
  */
 + (NSInteger) timeStampWithDate:(id)date
                       formatter:(id)formatter;
 {
-        //获取dateformmater
+    //获取dateformmater
     NSDateFormatter *dateFormatter;
     if ([formatter isKindOfClass:[NSDateFormatter class]]) {
 
@@ -116,7 +115,7 @@
         dateFormatter = [self formatterWithType:formatter];
     }
 
-        //获取时间
+    //获取时间
     NSDate *dataDate;
     if ([date isKindOfClass:[NSDate class]]) {
         dataDate = date;
@@ -124,13 +123,13 @@
     else if ([date isKindOfClass:[NSString class]]) {
 
         dataDate = [dateFormatter dateFromString:date];
-    }else{
+    }
+    else{
 
-        WLOG(@"< NSDate+dateHandler > 时间未定义!!!");
-        return 0;
+        dataDate = [NSDate dateWithTimeIntervalSince1970:(NSInteger)date];
     }
 
-    return [[[self formatterWithType:@(WSystemDateTimeFormat_TimeSnap)] stringFromDate:date] integerValue];
+    return [dataDate timeIntervalSince1970];
 }
 
 
@@ -146,7 +145,7 @@
 {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeStamp];
 
-        //获取dateformmater
+    //获取dateformmater
     return [[self formatterWithType:formatter] stringFromDate:date];
 }
 
@@ -160,9 +159,9 @@
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithDelay:(NSTimeInterval)delaySeconds
-                         format:(id)format
-         convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeStringWithDelay:(NSTimeInterval)delaySeconds
+                            format:(id)format
+            convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
         //获取系统的时间日期
     NSDate *nowdate=[NSDate dateWithTimeIntervalSinceNow:delaySeconds];
@@ -185,10 +184,10 @@
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithFormart:(id)format
-           convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeStringWithFormart:(id)format
+              convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
-    return [self getTimeWithDelay:0 format:format convertTimeZoneToChina:format];
+    return [self timeStringWithDelay:0 format:format convertTimeZoneToChina:convertTimeZoneToChina];
 }
 
 
@@ -202,24 +201,24 @@
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithDate:(id)date
-                         delay:(NSTimeInterval)delay
-                        format:(id)format
-                      toFormat:(id)toFormat
-        convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeWithDate:(id)date
+                      delay:(NSTimeInterval)delay
+                     format:(id)format
+                   toFormat:(id)toFormat
+     convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
-        //获取时间格式
+    //获取时间格式
     NSDateFormatter *formatter = [self formatterWithType:format];
     toFormat = [self formatterWithType:toFormat];
 
-        //获取 timezone 时区
+    //获取 timezone 时区
     if (convertTimeZoneToChina) {
 
         NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
         [formatter setTimeZone:timeZone];
     }
 
-        //转换时间
+    //转换时间
     NSDate *nowTime;
     if ([date isKindOfClass:[NSString class]]) {
 
@@ -232,11 +231,23 @@
         }
     }
 
-        //添加时间延迟
+    //添加时间延迟
     nowTime = [NSDate dateWithTimeInterval:delay sinceDate:nowTime];
 
-        //返回时间
+    //返回时间
     return [toFormat stringFromDate:nowTime];
+}
+
+
+/**
+ 获取某个时间+多少秒的时间
+
+ @param date 某个时间点 可以是时间字符串 或者是nsdate对象
+ @return 返回格式化后的时间字符串
+ */
++ (NSString *) timeIntervalWithLastTime:(NSDate *)date;
+{
+    [self compareNowTimeWithFormatter:<#(id)#> oldTime:<#(NSString *)#>]
 }
 
 
@@ -268,17 +279,28 @@
 /**
  和当前时间比较的差多少秒
 
- @param formatter formatter
- @param oldTime 要比较的时间
+ @param oldDate 要比较的时间
+ @param formatter 时间的ge
  @return 返回 现在的时间-oldtime 的秒数
  */
-+(NSTimeInterval)compareNowTimeWithFormatter:(id)formatter
-                                     oldTime:(NSString *)oldTime;
++(NSTimeInterval)compareWithDate:(id)oldDate formatter:(id)formatter;
 {
     formatter = [self formatterWithType:formatter];
 
     NSDate *date1 = [NSDate date];
-    NSDate *date2 = [formatter dateFromString:oldTime];
+    NSDate *date2;
+    if ([oldDate isKindOfClass:[NSDate class]]) {
+
+        date2 = oldDate;
+    }
+    else if ([oldDate isKindOfClass:[NSString class]]){
+
+        date2 = [formatter dateFromString:(NSString *)oldDate];
+    }
+    else{
+
+        return 0;
+    }
 
     NSTimeInterval secondCount1 = [date1 timeIntervalSince1970];
     NSTimeInterval secondCount2 = [date2 timeIntervalSince1970];

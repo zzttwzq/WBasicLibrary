@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1BE903F4085F8A9384BE16F1 /* Pods_WBasicLibrary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEBF35E9FD379F4A72C9C37 /* Pods_WBasicLibrary_Example.framework */; };
+		1C30DEB920F8948C00A53605 /* people.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEB820F8948C00A53605 /* people.m */; };
+		1C30DEBC20F894B700A53605 /* wang.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEBB20F894B700A53605 /* wang.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,28 +18,16 @@
 		6003F59E195388D20070C39A /* WAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* WViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* WViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		DF6721A5C5D3484D49B6B83B /* Pods_WBasicLibrary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00131B1795B8F4A8237BE9A2 /* Pods_WBasicLibrary_Tests.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = WBasicLibrary;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00131B1795B8F4A8237BE9A2 /* Pods_WBasicLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBasicLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C30DEB720F8948C00A53605 /* people.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = people.h; sourceTree = "<group>"; };
+		1C30DEB820F8948C00A53605 /* people.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = people.m; sourceTree = "<group>"; };
+		1C30DEBA20F894B700A53605 /* wang.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wang.h; sourceTree = "<group>"; };
+		1C30DEBB20F894B700A53605 /* wang.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wang.m; sourceTree = "<group>"; };
 		38530BF7EC99D57CE9A18C12 /* Pods-WBasicLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBasicLibrary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WBasicLibrary_Tests/Pods-WBasicLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4EEBF35E9FD379F4A72C9C37 /* Pods_WBasicLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBasicLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* WBasicLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBasicLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +43,6 @@
 		6003F5A5195388D20070C39A /* WViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* WViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* WBasicLibrary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBasicLibrary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -81,17 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				DF6721A5C5D3484D49B6B83B /* Pods_WBasicLibrary_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F58A195388D20070C39A /* WBasicLibrary_Example.app */,
-				6003F5AE195388D20070C39A /* WBasicLibrary_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +117,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				1C30DEB720F8948C00A53605 /* people.h */,
+				1C30DEB820F8948C00A53605 /* people.m */,
+				1C30DEBA20F894B700A53605 /* wang.h */,
+				1C30DEBB20F894B700A53605 /* wang.m */,
 			);
 			name = "Example for WBasicLibrary";
 			path = WBasicLibrary;
@@ -218,25 +199,6 @@
 			productReference = 6003F58A195388D20070C39A /* WBasicLibrary_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6003F5AD195388D20070C39A /* WBasicLibrary_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WBasicLibrary_Tests" */;
-			buildPhases = (
-				182B5364E43BE900B61CCADB /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
-			);
-			name = WBasicLibrary_Tests;
-			productName = WBasicLibraryTests;
-			productReference = 6003F5AE195388D20070C39A /* WBasicLibrary_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -249,9 +211,6 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = 596627HTEP;
-					};
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
 			};
@@ -269,7 +228,6 @@
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* WBasicLibrary_Example */,
-				6003F5AD195388D20070C39A /* WBasicLibrary_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,35 +244,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AC195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		182B5364E43BE900B61CCADB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WBasicLibrary_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		99CADCBF350CFCC31E50B3CB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,12 +254,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WBasicLibrary_Example/Pods-WBasicLibrary_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/WBasicLibrary/WBasicLibrary.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WBasicLibrary.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,29 +290,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C30DEBC20F894B700A53605 /* wang.m in Sources */,
+				1C30DEB920F8948C00A53605 /* people.m in Sources */,
 				6003F59E195388D20070C39A /* WAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AA195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* WBasicLibrary_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
@@ -496,7 +412,7 @@
 				INFOPLIST_FILE = "WBasicLibrary/WBasicLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.baasdf;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.WHFundation-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -513,53 +429,9 @@
 				INFOPLIST_FILE = "WBasicLibrary/WBasicLibrary-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.baasdf;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.WHFundation-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6003F5C3195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38530BF7EC99D57CE9A18C12 /* Pods-WBasicLibrary_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBasicLibrary_Example.app/WBasicLibrary_Example";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6003F5C4195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAAC287942183459B6378D44 /* Pods-WBasicLibrary_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBasicLibrary_Example.app/WBasicLibrary_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -580,15 +452,6 @@
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
 				6003F5C1195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WBasicLibrary_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

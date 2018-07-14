@@ -19,14 +19,17 @@
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 
-#import "NSDate+Whandler.h"     //日期分类
-#import "NSObject+Whandler.h"   //运行时分类
-#import "UIView+WHandler.h"     //view扩展分类
-#import "UIColor+Whandler.h"    //color扩展分类
-#import "NSData+AES256_.h"      //data的分类
-#import "NSData+Base64_.h"      //data的分类
-#import "NSString+WHandler.h"   //字符串的分类
+#import "NSDate+Whandler.h"          //日期分类
+#import "NSObject+Whandler.h"        //运行时分类
+#import "UIView+WHandler.h"          //view扩展分类
+#import "UIColor+Whandler.h"         //color扩展分类
+#import "NSData+AES256_.h"           //data的分类
+#import "NSData+Base64_.h"           //data的分类
+#import "NSString+WHandler.h"        //字符串的分类
 #import "NSMutableArray+WHandler.h"  //数组的分类
+#import "UILabel+WHandler.h"         //标签的分类
+#import "UIImage+WHandler.h"         //image的分类
+
 
 //==================================== 常用的宏定义 ==========================================
 #pragma mark - 常用的宏定义
@@ -54,6 +57,8 @@
 
 //升级成功提示
 #define UPDATE_LATER @"UPDATE_LATER"
+
+
 
 //================================== 常用方法 ==============================================
 #pragma mark - 常用的宏定义
@@ -86,11 +91,34 @@
 //弧度转角度
 #define RADIANS_TO_DEGREES(radians) (radians * (180.0 / M_PI))
 
+
+
 //================================== 显示消息 ==============================================
 #pragma mark - 常用的宏定义
 //================================== 显示消息 ==============================================
 #define SHOW_SUCCESS_MESSAGE(_MESSAGE_) [WMessage showSuccessMessage:_MESSAGE_];
 #define SHOW_INFO_MESSAGE(_MESSAGE_) [WMessage showInfoMessage:_MESSAGE_];
 #define SHOW_ERROR_MESSAGE(_MESSAGE_) [WMessage showErrorMessage:_MESSAGE_];
+
+
+
+//================================== block回调 ==============================================
+#pragma mark - 常用的宏定义
+//================================== block回调 ==============================================
+//返回空的回调
+typedef void (^BlankBlock)(void);
+//返回状态
+typedef void (^StateBlock)(BOOL state);
+//返回字符串
+typedef void (^StringBlock)(NSString * _Nullable string);
+//返回int 数据
+typedef void (^CountBlock)(int count);
+//返回float 数据
+typedef void (^floatCallBack)(float update);
+//图片回调
+typedef void (^ImageBlock)(UIImage * _Nullable image);
+//按钮回调
+typedef void (^BtnBlock)(UIButton * _Nullable btn);
+
 
 #endif /* Definetion_h */

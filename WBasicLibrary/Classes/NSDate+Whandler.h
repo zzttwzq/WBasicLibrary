@@ -26,7 +26,6 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
 };
 
 @interface NSDate (Whandler)
-
 #pragma mark - 获取时间格式
 /**
  获取时间格式
@@ -43,7 +42,7 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
 
  @return 返回当前的时间戳
  */
-+ (NSInteger) getNowTimeStamp;
++ (NSInteger) nowTimeStamp;
 
 
 /**
@@ -53,8 +52,8 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  @param formatter 需要的时间格式(可以是枚举，也可以是自定义的字符串)
  @return 返回s数
  */
-+ (NSInteger) getTimeStampWithDate:(id)date
-                         formatter:(id)formatter;
++ (NSInteger) timeStampWithDate:(id)date
+                      formatter:(id)formatter;
 
 
 /**
@@ -77,9 +76,9 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithDelay:(NSTimeInterval)delaySeconds
-                         format:(id)format
-         convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeStringWithDelay:(NSTimeInterval)delaySeconds
+                            format:(id)format
+            convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 
 
 /**
@@ -89,8 +88,8 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithFormart:(id)format
-           convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeStringWithFormart:(id)format
+              convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 
 
 /**
@@ -103,11 +102,16 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) getTimeWithDate:(id)date
-                         delay:(NSTimeInterval)delay
-                        format:(id)format
-                      toFormat:(id)toFormat
-        convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) timeWithDate:(id)date
+                      delay:(NSTimeInterval)delay
+                     format:(id)format
+                   toFormat:(id)toFormat
+     convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
+
+
+
++ (NSString *) timeIntervalWithLastTime:(id)date;
+
 
 
 #pragma mark - 比较时间
@@ -123,7 +127,6 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
                                        time1:(NSString *)time1
                                        time2:(NSString *)time2;
 
-
 /**
  和当前时间比较的差多少秒
 
@@ -133,7 +136,6 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  */
 +(NSTimeInterval)compareNowTimeWithFormatter:(id)formatter
                                      oldTime:(NSString *)oldTime;
-
 
 
 @end

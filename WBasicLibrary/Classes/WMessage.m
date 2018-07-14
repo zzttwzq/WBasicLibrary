@@ -14,20 +14,6 @@
 @end
 
 @implementation WMessage
-
-+ (WMessage *)sharedInstance
-{
-    static WMessage *sharedInstance;
-    static dispatch_once_t once;
-
-    dispatch_once(&once, ^{
-        sharedInstance = [[self alloc] init];
-    });
-
-    return sharedInstance;
-}
-
-
 /**
  吐司消息
 
@@ -36,39 +22,6 @@
 +(void)showToast:(NSString *)toastMessage;
 {
     [self showMessage:toastMessage fromBottomPosition:FYMESSAGE_POSITION_TYPE_BOTTOM isWhite:NO Animat:NO];
-}
-
-
-/**
- 显示错误消息
-
- @param errorMessage 错误的消息
- */
-+(void)showErrorMessage:(NSString *)errorMessage;
-{
-    [self showMessage:errorMessage fromBottomPosition:FYMESSAGE_POSITION_TYPE_BOTTOM isWhite:NO Animat:NO];
-}
-
-
-/**
- 显示提示消息
-
- @param infoMessage 提示消息
- */
-+(void)showInfoMessage:(NSString *)infoMessage;
-{
-    [self showMessage:infoMessage fromBottomPosition:FYMESSAGE_POSITION_TYPE_BOTTOM isWhite:NO Animat:NO];
-}
-
-
-/**
- 显示成功消息
-
- @param successMessage 显示成功消息
- */
-+(void)showSuccessMessage:(NSString *)successMessage;
-{
-    [self showMessage:successMessage fromBottomPosition:FYMESSAGE_POSITION_TYPE_BOTTOM isWhite:NO Animat:NO];
 }
 
 
@@ -237,11 +190,11 @@
  @param comfirmAction 确定点击事件
  */
 +(void)showSystemAlertWithalertType:(UIAlertControllerStyle)alertType
-target:(UIViewController *)target
-Title:(NSString *)title
-message:(NSString *)message
-actions:(NSArray *)actions
-comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
+                             target:(UIViewController *)target
+                              Title:(NSString *)title
+                            message:(NSString *)message
+                            actions:(NSArray *)actions
+                      comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:alertType];
 
@@ -271,10 +224,10 @@ comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
  @param comfirmAction 确定点击事件
  */
 +(void)showAlertWithTitle:(NSString *)title
-target:(UIViewController *)target
-enableCancelBtn:(BOOL)enableCancelBtn
-message:(NSString *)message
-comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
+                   target:(UIViewController *)target
+          enableCancelBtn:(BOOL)enableCancelBtn
+                  message:(NSString *)message
+            comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
 {
     NSMutableArray *array = [NSMutableArray array];
     if (enableCancelBtn) {
@@ -304,11 +257,11 @@ comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
  @param comfirmAction 确定点击事件
  */
 +(void)showAlertWithTarget:(UIViewController *)target
-title:(NSString *)title
-message:(NSString *)message
-actions:(NSArray *)actions
-colors:(NSArray *)colors
-comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
+                     title:(NSString *)title
+                   message:(NSString *)message
+                   actions:(NSArray *)actions
+                    colors:(NSArray *)colors
+             comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
 {
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i<actions.count; i++) {
@@ -345,12 +298,12 @@ comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
  @param comfirmAction 确定点击事件
  */
 +(void)showActionSheetWithTitle:(NSString *)title
-target:(UIViewController *)target
-enableCancelBtn:(BOOL)enableCancelBtn
-message:(NSString *)message
-comfirmText:(NSString *)comfirmText
-actionNames:(NSArray *)actionNames
-comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
+                         target:(UIViewController *)target
+                enableCancelBtn:(BOOL)enableCancelBtn
+                        message:(NSString *)message
+                    comfirmText:(NSString *)comfirmText
+                    actionNames:(NSArray *)actionNames
+                  comfirmAction:(void(^)(UIAlertAction *action))comfirmAction;
 {
     NSMutableArray *array = [NSMutableArray array];
     if (enableCancelBtn) {

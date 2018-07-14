@@ -21,7 +21,7 @@
 - (BOOL) isBlank;
 {
     if (self &&
-        self.length == 0 &&
+        self.length != 0 &&
         ![self isEqualToString:@"<null>"] &&
         ![self isEqualToString:@"(null)"] &&
         ![self isKindOfClass:[NSNull class]] &&
@@ -56,12 +56,12 @@
 
  @return 返回长度
  */
-- (NSInteger) chineseStringLength;
+- (int) chineseStringLength;
 {
-    NSInteger unicodeLength = 0;
-    for(NSInteger i=0; i< [self length];i++){
+    int unicodeLength = 0;
+    for(int i=0; i< [self length];i++){
 
-        NSInteger a = [self characterAtIndex:i];
+        int a = [self characterAtIndex:i];
         if( a > 0x4e00 && a < 0x9fff){
 
             unicodeLength ++;
@@ -77,12 +77,12 @@
 
  @return 获取包含中文的字符串长度
  */
-- (NSUInteger) lengthWithChinese;
+- (int) lengthWithChinese;
 {
-    NSInteger unicodeLength = 0;
-    for(NSInteger i=0; i< [self length];i++){
+    int unicodeLength = 0;
+    for(int i=0; i< [self length];i++){
 
-        NSInteger a = [self characterAtIndex:i];
+        int a = [self characterAtIndex:i];
         if( a > 0x4e00 && a < 0x9fff){
 
             unicodeLength ++;
@@ -102,12 +102,12 @@
 
  @return 获取不包含中文的字符串长度
  */
-- (NSUInteger) lengthWithoutChinese
+- (int) lengthWithoutChinese
 {
-    NSInteger unicodeLength = 0;
-    for(NSInteger i=0; i< [self length];i++){
+    int unicodeLength = 0;
+    for(int i=0; i< [self length];i++){
 
-        NSInteger a = [self characterAtIndex:i];
+        int a = [self characterAtIndex:i];
         if( a > 0x4e00 && a < 0x9fff){}
         else{
 
@@ -120,12 +120,13 @@
 
 
 #pragma mark - 字符串加密
+
 /**
  sha1编码
 
  @return 返回编码的字符串
  */
-- (NSString *) sha1;
+- (NSString *) SHA1;
 {
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
 
@@ -149,7 +150,7 @@
 
  @return 返回md5编码的字符串
  */
-- (NSString *) md5;
+- (NSString *) MD5;
 {
     //1.首先将字符串转换成UTF-8编码, 因为MD5加密是基于C语言的,所以要先把字符串转化成C语言的字符串
     const char *fooData = [self UTF8String];
@@ -220,8 +221,16 @@
 -(NSString *)subStringAtIndex:(int)index
                        length:(int)length;
 {
-    NSString *str = [self substringFromIndex:index];
-    return [str substringToIndex:length];
+    if (index+length < self.length) {
+
+        NSString *str = [self substringFromIndex:index];
+        return [str substringToIndex:length];
+    }
+    else{
+
+        return nil;
+        [self showInfo:@"字符串索引越界"];
+    }
 }
 
 
@@ -299,4 +308,8 @@
 }
 
 
+- (void) showInfo:(NSString *)string;
+{
+    WLOG(@"<!警告!> <NSString (WHandler)> %@",string);
+}
 @end

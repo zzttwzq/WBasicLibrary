@@ -9,19 +9,21 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (Whandler)
+#pragma mark - 动态获取对象信息
 /**
  获取当前对象的属性名称数组
 
  @return NSArray 性名称数组
  */
--(NSArray *)getObjectPropName;
+-(NSArray *)getPropertyNames;
 {
-        //属性名称数组
+    //属性名称数组
     NSMutableArray *props = [NSMutableArray array];
 
-        //属性列表变量
+    //属性列表变量
     unsigned int outCount,i;
-        //获取属性列表对象
+
+    //获取属性列表对象
     objc_property_t *properties = class_copyPropertyList([self class], &outCount);
 
     for (i = 0; i<outCount; i++) {
@@ -45,7 +47,7 @@
 
  @return NSDictionary 包含属性名称和值的字典
  */
--(NSDictionary *)getObjectPropertiesAndValues;
+-(NSDictionary *)getPropertiesAndValues;
 {
     NSMutableDictionary *props = [NSMutableDictionary dictionary];
     unsigned int outCount,i;
@@ -73,9 +75,10 @@
 /**
  获取当前对象的属性名称和值（属性名称都是小写）
 
+ @param isLowercase 是否是小写，如果no 就是大写
  @return NSDictionary 包含小写属性名称和值的字典
  */
--(NSDictionary *)getObjectPropertiesLowercaseAndValues;
+-(NSDictionary *)getPropertiesAndValuesWithLowercase:(BOOL)isLowercase;
 {
     NSMutableDictionary *props = [NSMutableDictionary dictionary];
     unsigned int outCount,i;
@@ -105,7 +108,7 @@
 
  @return 返回一个包含属性名称和类型的字典
  */
--(NSDictionary *)getObjectPropertiesAndTypes;
+-(NSDictionary *)getPropertiesAndTypes;
 {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     u_int count;
@@ -132,7 +135,7 @@
 
  @return 类方法的名称数组
  */
-+(NSArray *)getClassMethodName;
++(NSArray *)getInstenceMethods;
 {
     NSMutableArray *array = [NSMutableArray array];
 
@@ -153,64 +156,29 @@
 
 
 #pragma mark - 赋值类操作
-/**
- 给当前对象的某个属性赋值(kvc)
-
- @param key 属性
- @param value 值
- */
--(void)setObjWithKey:(NSString *)key value:(id)value;
-{
-    NSArray *propArray = [self getObjectPropName];
-    if ([propArray containsObject:key]) {
-
-        [self setValue:value forKey:key];
-    }
-    else{
-
-        WLOG(@"runtimeAssosiate>>错误，没有这个key:%@",key);
-    }
-}
-
 
 /**
- 使用字典包含的属性和值给对象赋值
+ 用字典设置对象的数据
 
- @param dic 包含的属性和值给对象的字典
+ @param dict 要设置的字典
  */
--(void)setObjWithDic:(NSDictionary *)dic;
+- (void) setObjectWithDict:(NSDictionary *)dict;
 {
-    NSArray *propArray = [self getObjectPropName];
+    for (NSString *key in dict) {
 
-    if ([dic isKindOfClass:[NSDictionary class]]) {
+        if (dict[key] &&
+            ![dict[key] isKindOfClass:[NSNull class]]) {
 
-        for (NSString *key in dic) {
+            if ([dict[key] isKindOfClass:[NSString class]]) {
 
-            if ([propArray containsObject:key]) {
+                if (![dict[key] isEqualToString:@"<null>"]) {
 
-                if (dic[key] &&
-                    ![dic[key] isKindOfClass:[NSNull class]]) {
-
-                    if ([dic[key] isKindOfClass:[NSString class]]) {
-
-                        if (![dic[key] isEqualToString:@"<null>"]) {
-
-                            [self setValue:dic[key] forKey:key];
-                        }
-                        else{
-
-                            [self setValue:nil forKey:key];
-                        }
-                    }
-                    else{
-
-                        [self setValue:dic[key] forKey:key];
-                    }
+                    [self setValue:dict[key] forKey:key];
                 }
             }
             else{
-
-                WLOG(@"<Runtime> >>错误，没有这个key:%@",key);
+                
+                [self setValue:dict[key] forKey:key];
             }
         }
     }
@@ -218,15 +186,15 @@
 
 
 /**
- 用字典设置对象的数据
+ 安全的动态设置对象数据（如果要设置的数据包含父类的属性，会出现设置不了的情况）
 
  @param dict 要设置的字典
  */
--(void)setObjectValueWithDict:(NSDictionary *)dict;
+- (void) safeSetWithDict:(NSDictionary *)dict;
 {
-    NSArray *propArray = [self getObjectPropName];
+    NSArray *propArray = [self getPropertyNames];
 
-        //避免报错
+    //避免报错
     if ([dict isKindOfClass:[NSDictionary class]]) {
 
         for (NSString *key in dict) {
@@ -247,117 +215,35 @@
 
                     [self setValue:dict[key] forKey:key];
                 }
+                else if (dict[key] &&
+                    ![dict[key] isKindOfClass:[NSNull class]]) {
+
+                    [self setValue:dict[key] forKey:key];
+                }
+                else if (![dict[key] isEqualToString:@"<null>"]) {
+
+                    [self setValue:dict[key] forKey:key];
+                }
             }
             else{
 
-                WLOG(@"%@",[NSString stringWithFormat:@"runtimeAssosiate>>错误，没有这个key:%@",key]);
+                [self showInfo:[NSString stringWithFormat:@"没有这个key:%@",key]];
             }
         }
     }else{
 
-        WLOG(@"请传入字典！");
+        [self showInfo:@"请传入字典！"];
     }
 }
 
 
-#pragma mark - 绑定方法或属性
--(void)setLinkKey:(NSString *)linkKey
+/**
+ 显示消息
+
+ @param string 要显示的消息
+ */
+- (void) showInfo:(NSString *)string
 {
-    objc_setAssociatedObject(self, [linkKey UTF8String], @"adfsa", OBJC_ASSOCIATION_COPY_NONATOMIC);
+    WLOG(@"<!警告!> <NSObject (Whandler)> \n%@",string);
 }
-
-
-    //- (NSMethodSignature *)methodSignatureForSelector:(SEL)selector
-    //{
-    //    @synchronized([self class])
-    //    {
-    //    //look up method signature
-    //    NSMethodSignature *signature = [self methodSignatureForSelector:selector];
-    //    if (!signature)
-    //        {
-    //            //not supported by NSNull, search other classes
-    //        static NSMutableSet *classList = nil;
-    //        static NSMutableDictionary *signatureCache = nil;
-    //        if (signatureCache == nil)
-    //            {
-    //            classList = [[NSMutableSet alloc] init];
-    //            signatureCache = [[NSMutableDictionary alloc] init];
-    //
-    //                //get class list
-    //            int numClasses = objc_getClassList(NULL, 0);
-    //            Class *classes = (Class *)malloc(sizeof(Class) * (unsigned long)numClasses);
-    //            numClasses = objc_getClassList(classes, numClasses);
-    //
-    //                //add to list for checking
-    //            NSMutableSet *excluded = [NSMutableSet set];
-    //            for (int i = 0; i < numClasses; i++)
-    //                {
-    //                    //determine if class has a superclass
-    //                Class someClass = classes[i];
-    //                Class superclass = class_getSuperclass(someClass);
-    //                while (superclass)
-    //                    {
-    //                    if (superclass == [NSObject class])
-    //                        {
-    //                        [classList addObject:someClass];
-    //                        break;
-    //                        }
-    //                    [excluded addObject:NSStringFromClass(superclass)];
-    //                    superclass = class_getSuperclass(superclass);
-    //                    }
-    //                }
-    //
-    //                //remove all classes that have subclasses
-    //            for (Class someClass in excluded)
-    //                {
-    //                [classList removeObject:someClass];
-    //                }
-    //
-    //                //free class list
-    //            free(classes);
-    //            }
-    //
-    //            //check implementation cache first
-    //        NSString *selectorString = NSStringFromSelector(selector);
-    //        signature = signatureCache[selectorString];
-    //        if (!signature)
-    //            {
-    //                //find implementation
-    //            for (Class someClass in classList)
-    //                {
-    //                if ([someClass instancesRespondToSelector:selector])
-    //                    {
-    //                    signature = [someClass instanceMethodSignatureForSelector:selector];
-    //                    break;
-    //                    }
-    //                }
-    //
-    //                //cache for next time
-    //            signatureCache[selectorString] = signature ?: [NSNull null];
-    //            }
-    //        else if ([signature isKindOfClass:[NSNull class]])
-    //            {
-    //            signature = nil;
-    //            }
-    //        }
-    //    return signature;
-    //    }
-    //}
-    //
-    //- (void)forwardInvocation:(NSInvocation *)invocation
-    //{
-    //    invocation.target = nil;
-    //    [invocation invoke];
-    //}
-
-
-    //+(BOOL)resolveClassMethod:(SEL)sel
-    //{
-    //    return YES;
-    //}
-    //
-    //+(BOOL)resolveInstanceMethod:(SEL)sel
-    //{
-    //    return YES;
-    //}
 @end

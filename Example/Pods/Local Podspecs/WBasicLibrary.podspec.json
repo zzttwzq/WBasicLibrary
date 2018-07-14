@@ -18,10 +18,5 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "WBasicLibrary/Classes/**/*",
-  "dependencies": {
-    "AFNetworking": [
-
-    ]
-  }
+  "source_files": "WBasicLibrary/Classes/**/*"
 }

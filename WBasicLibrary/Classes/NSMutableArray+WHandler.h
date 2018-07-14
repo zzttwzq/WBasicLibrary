@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MicroDefinetion.h"
 
 @interface NSMutableArray (WHandler)
 

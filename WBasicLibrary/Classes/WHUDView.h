@@ -13,11 +13,16 @@
 /**
  显示view
  */
--(void)show;
++ (void) showLoadingWithMessage:(NSString *)message;
+
+
++ (void) showLoading;
+
 
 /**
  取消view
  */
--(void)dismiss;
++ (void) dismissLoading;
 
++ (void) dismissMessage;
 @end

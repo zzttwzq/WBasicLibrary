@@ -32,7 +32,7 @@
 
  @return 返回长度
  */
-- (NSInteger) chineseStringLength;
+- (int) chineseStringLength;
 
 
 /**
@@ -40,7 +40,7 @@
 
  @return 获取包含中文的字符串长度
  */
-- (NSUInteger) lengthWithChinese;
+- (int) lengthWithChinese;
 
 
 /**
@@ -48,7 +48,7 @@
 
  @return 获取不包含中文的字符串长度
  */
-- (NSUInteger) lengthWithoutChinese;
+- (int) lengthWithoutChinese;
 
 
 #pragma mark - 字符串加密
@@ -57,7 +57,7 @@
 
  @return 返回编码的字符串
  */
-- (NSString *) sha1;
+- (NSString *) SHA1;
 
 
 /**
@@ -65,7 +65,7 @@
 
  @return 返回md5编码的字符串
  */
-- (NSString *) md5;
+- (NSString *) MD5;
 
 
 #pragma mark - 字符串过滤、截取
@@ -115,4 +115,21 @@
 -(CGSize)sizeWithFont:(UIFont *)font maxSize:(CGSize)maxSize;
 
 
+#pragma mark - 判断字符串
+/**
+ 判断是否是手机号
+
+ @param mobileString 要显示的字号
+ @return 是否是手机号
+ */
++ (BOOL)isMobile:(NSString *)mobileString;
+
+
+/**
+ 判断是否是邮箱
+
+ @param email 要显示的字号
+ @return 是否是邮箱
+ */
++ (BOOL)isEmail:(NSString *)email;
 @end
