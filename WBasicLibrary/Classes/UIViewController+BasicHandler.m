@@ -37,14 +37,14 @@ const char listenKeyBoarderFrameChange;
  */
 - (void) openDownLoadInAppStoreWithAPPID:(NSString *)appid;
 {
-    [WHUDView showLoading];
+//    [WHUDView showLoading];
 
     SKStoreProductViewController *storeProductVC = [[SKStoreProductViewController alloc] init];
     storeProductVC.delegate = self;
     NSDictionary *dict = [NSDictionary dictionaryWithObject:appid forKey:SKStoreProductParameterITunesItemIdentifier];
     [storeProductVC loadProductWithParameters:dict completionBlock:^(BOOL result, NSError *error) {
 
-        [WHUDView dismissLoading];
+//        [WHUDView dismissLoading];
         if (result) {
 
             [self presentViewController:storeProductVC animated:YES completion:nil];

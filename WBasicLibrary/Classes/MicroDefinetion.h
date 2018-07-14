@@ -29,6 +29,9 @@
 #import "NSMutableArray+WHandler.h"  //数组的分类
 #import "UILabel+WHandler.h"         //标签的分类
 #import "UIImage+WHandler.h"         //image的分类
+#import "UIViewController+BasicHandler.h"
+#import "UIViewController+WebHandler.h"
+#import "UIViewController+TableHandler.h"
 
 
 //==================================== 常用的宏定义 ==========================================
@@ -47,6 +50,9 @@
 #define WLOG(...);
 #define WLOG_METHOD;
 #endif
+
+//显示调试消息
+#define DEBUG_LOG(TARGET,MESSAGE) WLOG(@"<!警告!> %@ %@",TARGET,MESSAGE)
 
 #define VIEW_WITH_RECT(x,y,width,height) [[UIView alloc] initWithFrame:CGRectMake(x, y, width, height)]
 #define LABEL_WITH_RECT(x,y,width,height) [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)]

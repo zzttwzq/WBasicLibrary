@@ -10,16 +10,21 @@
 @implementation NSDate (Whandler)
 
 /**
- 获取时间格式
+ 时间格式转换
 
- @param type 需要的时间格式(可以是枚举，也可以是自定义的字符串)
+ @param type 可以传入 NSDateFormatter WSystemDateTimeFormat 字符串
  @return 返回时间格式对象
  */
-+(NSDateFormatter *)formatterWithType:(id)type;
++ (NSDateFormatter *) formatterWithType:(id)type;
 {
     NSDateFormatter *dateformatter = [[NSDateFormatter alloc] init];
 
-    if ([type isKindOfClass:[NSString class]]) {
+    if ([type isKindOfClass:[NSDateFormatter class]]) {
+
+        return type;
+    }
+    else if ([type isKindOfClass:[NSString class]]) {
+
         NSString *string = type;
         if (string.length > 0) {
 
@@ -30,14 +35,9 @@
             return nil;
         }
     }
-    else if ([type isKindOfClass:[NSDateFormatter class]]) {
-
-        return type;
-    }
     else{
 
         WSystemDateTimeFormat formatter = [type intValue];
-
         if (formatter == WSystemDateTimeFormat_Date) {
 
             [dateformatter setDateFormat:@"yyyy-MM-dd"];
@@ -81,6 +81,41 @@
 }
 
 
+/**
+ 日期转换
+
+ @param date 可以传入 NSDate 字符串 时间戳
+ @param formatter 可以传入 NSDateFormatter WSystemDateTimeFormat 字符串
+ @return 返回日期对象
+ */
++ (NSDate *)dateWithDate:(id)date
+               formatter:(id)formatter;
+{
+    if (!date) {
+
+        return [NSDate date];
+    }
+    else if ([date isKindOfClass:[NSDate class]]) {
+
+        return date;
+    }
+    else if ([date isKindOfClass:[NSString class]]){
+
+        return [[self formatterWithType:formatter] dateFromString:(NSString *)date];
+    }
+    else if ((NSInteger)date > 0){
+
+        return [NSDate dateWithTimeIntervalSince1970:(NSInteger)date];
+    }
+    else{
+
+        NSString *message = [NSString stringWithFormat:@"无法处理的时间 %@ 和 格式 %@",date,formatter];
+        DEBUG_LOG(self,message);
+        return nil;
+    }
+}
+
+
 #pragma mark - 获取时间戳
 /**
  获取时间
@@ -104,31 +139,8 @@
 + (NSInteger) timeStampWithDate:(id)date
                       formatter:(id)formatter;
 {
-    //获取dateformmater
-    NSDateFormatter *dateFormatter;
-    if ([formatter isKindOfClass:[NSDateFormatter class]]) {
-
-        dateFormatter = formatter;
-    }
-    else {
-
-        dateFormatter = [self formatterWithType:formatter];
-    }
-
     //获取时间
-    NSDate *dataDate;
-    if ([date isKindOfClass:[NSDate class]]) {
-        dataDate = date;
-    }
-    else if ([date isKindOfClass:[NSString class]]) {
-
-        dataDate = [dateFormatter dateFromString:date];
-    }
-    else{
-
-        dataDate = [NSDate dateWithTimeIntervalSince1970:(NSInteger)date];
-    }
-
+    NSDate *dataDate = [self dateWithDate:date formatter:formatter];
     return [dataDate timeIntervalSince1970];
 }
 
@@ -144,8 +156,6 @@
                        formatter:(id)formatter;
 {
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeStamp];
-
-    //获取dateformmater
     return [[self formatterWithType:formatter] stringFromDate:date];
 }
 
@@ -159,12 +169,12 @@
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) timeStringWithDelay:(NSTimeInterval)delaySeconds
++ (NSString *) stringWithDelay:(NSTimeInterval)delaySeconds
                             format:(id)format
             convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
         //获取系统的时间日期
-    NSDate *nowdate=[NSDate dateWithTimeIntervalSinceNow:delaySeconds];
+    NSDate *nowdate = [NSDate dateWithTimeIntervalSinceNow:delaySeconds];
     NSDateFormatter *dateformatter = [self formatterWithType:format];
 
     if (convertTimeZoneToChina) {
@@ -187,7 +197,7 @@
 + (NSString *) timeStringWithFormart:(id)format
               convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
-    return [self timeStringWithDelay:0 format:format convertTimeZoneToChina:convertTimeZoneToChina];
+    return [self stringWithDelay:0 format:format convertTimeZoneToChina:convertTimeZoneToChina];
 }
 
 
@@ -207,28 +217,14 @@
                    toFormat:(id)toFormat
      convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 {
-    //获取时间格式
-    NSDateFormatter *formatter = [self formatterWithType:format];
-    toFormat = [self formatterWithType:toFormat];
+    //转换时间
+    NSDate *nowTime = [self dateWithDate:date formatter:[self formatterWithType:format]];
+    NSDateFormatter *toFormatter = [self formatterWithType:toFormat];
 
     //获取 timezone 时区
     if (convertTimeZoneToChina) {
-
         NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
-        [formatter setTimeZone:timeZone];
-    }
-
-    //转换时间
-    NSDate *nowTime;
-    if ([date isKindOfClass:[NSString class]]) {
-
-        nowTime = [formatter dateFromString:date];
-    }else{
-
-        if ([date isKindOfClass:[NSDate class]]) {
-
-            nowTime = date;
-        }
+        [toFormatter setTimeZone:timeZone];
     }
 
     //添加时间延迟
@@ -245,9 +241,14 @@
  @param date 某个时间点 可以是时间字符串 或者是nsdate对象
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) timeIntervalWithLastTime:(NSDate *)date;
++ (NSString *) timeIntervalWithLastTime:(NSDate *)date
+                              formatter:(id)formatter;
 {
-    [self compareNowTimeWithFormatter:<#(id)#> oldTime:<#(NSString *)#>]
+    formatter = [self formatterWithType:formatter];
+
+//    [self compareNowTimeWithFormatter:formatter oldTime:date];
+
+    return nil;
 }
 
 
@@ -283,29 +284,15 @@
  @param formatter 时间的ge
  @return 返回 现在的时间-oldtime 的秒数
  */
-+(NSTimeInterval)compareWithDate:(id)oldDate formatter:(id)formatter;
++(NSTimeInterval)compareWithDate:(id)oldDate
+                       formatter:(id)formatter;
 {
-    formatter = [self formatterWithType:formatter];
-
     NSDate *date1 = [NSDate date];
-    NSDate *date2;
-    if ([oldDate isKindOfClass:[NSDate class]]) {
-
-        date2 = oldDate;
-    }
-    else if ([oldDate isKindOfClass:[NSString class]]){
-
-        date2 = [formatter dateFromString:(NSString *)oldDate];
-    }
-    else{
-
-        return 0;
-    }
+    NSDate *date2 = [self dateWithDate:oldDate formatter:formatter];
 
     NSTimeInterval secondCount1 = [date1 timeIntervalSince1970];
     NSTimeInterval secondCount2 = [date2 timeIntervalSince1970];
 
     return ceil(secondCount2-secondCount1);
 }
-
 @end

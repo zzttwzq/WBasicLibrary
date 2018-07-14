@@ -13,5 +13,7 @@
 
 #import "WHUDView.h"
 #import "WMessage.h"
+#import "WScanCodeVC"
+#import ""
 
 #endif /* WBasicHeader_h */

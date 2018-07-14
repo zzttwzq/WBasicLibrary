@@ -28,19 +28,30 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
 @interface NSDate (Whandler)
 #pragma mark - 获取时间格式
 /**
- 获取时间格式
+ 时间格式转换
 
- @param type 需要的时间格式(可以是枚举，也可以是自定义的字符串)
+ @param type 可以传入 NSDateFormatter WSystemDateTimeFormat 字符串
  @return 返回时间格式对象
  */
-+(NSDateFormatter *)formatterWithType:(id)type;
++ (NSDateFormatter *) formatterWithType:(id)type;
+
+
+/**
+ 日期转换
+
+ @param date 可以传入 NSDate 字符串 时间戳
+ @param formatter 可以传入 NSDateFormatter WSystemDateTimeFormat 字符串
+ @return 返回日期对象
+ */
++ (NSDate *)dateWithDate:(id)date
+               formatter:(id)formatter;
 
 
 #pragma mark - 获取时间戳
 /**
  获取时间
 
- @return 返回当前的时间戳
+ @return 返回秒数
  */
 + (NSInteger) nowTimeStamp;
 
@@ -50,7 +61,7 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
 
  @param date 时间字符串 或 日期对象
  @param formatter 需要的时间格式(可以是枚举，也可以是自定义的字符串)
- @return 返回s数
+ @return 返回秒数
  */
 + (NSInteger) timeStampWithDate:(id)date
                       formatter:(id)formatter;
@@ -76,9 +87,9 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
  @param convertTimeZoneToChina 是否把时间转换为中国时区
  @return 返回格式化后的时间字符串
  */
-+ (NSString *) timeStringWithDelay:(NSTimeInterval)delaySeconds
-                            format:(id)format
-            convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
++ (NSString *) stringWithDelay:(NSTimeInterval)delaySeconds
+                        format:(id)format
+        convertTimeZoneToChina:(BOOL)convertTimeZoneToChina;
 
 
 /**
@@ -130,12 +141,20 @@ typedef NS_ENUM(NSInteger,WSystemDateTimeFormat) {
 /**
  和当前时间比较的差多少秒
 
- @param formatter formatter
- @param oldTime 要比较的时间
+ @param oldDate 要比较的时间
+ @param formatter 时间的ge
  @return 返回 现在的时间-oldtime 的秒数
  */
-+(NSTimeInterval)compareNowTimeWithFormatter:(id)formatter
-                                     oldTime:(NSString *)oldTime;
++(NSTimeInterval)compareWithDate:(id)oldDate
+                       formatter:(id)formatter;
 
 
+/**
+ 显示警告消息
+
+ @param target 对象
+ @param message 要发送的消息
+ */
++ (void) showInfoWithTarget:(id)target
+                    message:(NSString *)message;
 @end

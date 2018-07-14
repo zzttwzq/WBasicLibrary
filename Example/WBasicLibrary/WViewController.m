@@ -7,7 +7,7 @@
 //
 
 #import "WViewController.h"
-#import <WBasicLibrary/WBasicHeader.h>
+#import <>
 #import "wang.h"
 
 @interface WViewController ()
@@ -23,7 +23,7 @@
 
 
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake((ScreenWidth-50)/2, 100, 50, 40);
+    btn.frame = CGRectMake(100, 100, 50, 40);
     btn.backgroundColor = [UIColor redColor];
     [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
