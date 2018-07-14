@@ -21,8 +21,6 @@
 #import "UILabel+WHandler.h"
 #import "UIView+WHandler.h"
 #import "WBasicHeader.h"
-#import "WHUDView.h"
-#import "WMessage.h"
 
 FOUNDATION_EXPORT double WBasicLibraryVersionNumber;
 FOUNDATION_EXPORT const unsigned char WBasicLibraryVersionString[];

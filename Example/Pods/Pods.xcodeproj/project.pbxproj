@@ -11,18 +11,16 @@
 		13370DC18FECF348915FD924D1003EF7 /* WBasicLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EDB3F18143E2F30F6ABB8BCEAA6DC8 /* WBasicLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C30DECA20F8A77A00A53605 /* UIImage+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEC720F8A77A00A53605 /* UIImage+WHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C30DECC20F8A77A00A53605 /* UIImage+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEC820F8A77A00A53605 /* UIImage+WHandler.m */; };
-		1C30DEF020F8AEF900A53605 /* UIViewController+BasicHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEEE20F8AEF900A53605 /* UIViewController+BasicHandler.h */; };
-		1C30DEF120F8AEF900A53605 /* UIViewController+BasicHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEEE20F8AEF900A53605 /* UIViewController+BasicHandler.h */; };
+		1C30DEF120F8AEF900A53605 /* UIViewController+BasicHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEEE20F8AEF900A53605 /* UIViewController+BasicHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C30DEF220F8AEF900A53605 /* UIViewController+BasicHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEEF20F8AEF900A53605 /* UIViewController+BasicHandler.m */; };
 		1C30DEF320F8AEF900A53605 /* UIViewController+BasicHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEEF20F8AEF900A53605 /* UIViewController+BasicHandler.m */; };
-		1C30DEFC20F8AF3800A53605 /* UIViewController+WebHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEFA20F8AF3800A53605 /* UIViewController+WebHandler.h */; };
-		1C30DEFD20F8AF3800A53605 /* UIViewController+WebHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEFA20F8AF3800A53605 /* UIViewController+WebHandler.h */; };
+		1C30DEFD20F8AF3800A53605 /* UIViewController+WebHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEFA20F8AF3800A53605 /* UIViewController+WebHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C30DEFE20F8AF3800A53605 /* UIViewController+WebHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEFB20F8AF3800A53605 /* UIViewController+WebHandler.m */; };
 		1C30DEFF20F8AF3800A53605 /* UIViewController+WebHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C30DEFB20F8AF3800A53605 /* UIViewController+WebHandler.m */; };
-		1C7E072420F995FD000417A7 /* UIViewController+TableHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7E072220F995FD000417A7 /* UIViewController+TableHandler.h */; };
-		1C7E072520F995FD000417A7 /* UIViewController+TableHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7E072220F995FD000417A7 /* UIViewController+TableHandler.h */; };
+		1C7E072520F995FD000417A7 /* UIViewController+TableHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7E072220F995FD000417A7 /* UIViewController+TableHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C7E072620F995FD000417A7 /* UIViewController+TableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E072320F995FD000417A7 /* UIViewController+TableHandler.m */; };
 		1C7E072720F995FD000417A7 /* UIViewController+TableHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E072320F995FD000417A7 /* UIViewController+TableHandler.m */; };
+		1C7E07E820F9DAC3000417A7 /* UIImage+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C30DEC720F8A77A00A53605 /* UIImage+WHandler.h */; };
 		3066CF6A5AF68C948DB6D9AAF83A1A32 /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 57A39CCC9694BA9176A2872C95D4BF49 /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3697877A1B0BC4B74539A34B03183702 /* Pods-WBasicLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BED8B3B4CFEAB2736E3CCE062D9CC7F /* Pods-WBasicLibrary_Example-dummy.m */; };
 		36CB1A5C946A871CD711371DEBD4CF2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -272,10 +270,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C30DEF020F8AEF900A53605 /* UIViewController+BasicHandler.h in Headers */,
 				8D36757DA469BDEE35A84E604FF95E39 /* Pods-WBasicLibrary_Example-umbrella.h in Headers */,
-				1C7E072420F995FD000417A7 /* UIViewController+TableHandler.h in Headers */,
-				1C30DEFC20F8AF3800A53605 /* UIViewController+WebHandler.h in Headers */,
+				1C7E07E820F9DAC3000417A7 /* UIImage+WHandler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
