@@ -7,7 +7,7 @@
 //
 
 #import "WViewController.h"
-#import <>
+#import <WBasicLibrary/WBasicHeader.h>
 #import "wang.h"
 
 @interface WViewController ()
@@ -36,8 +36,6 @@
 //    [self.view addSubview:view];
 
 //    [view drawDashLineWithPosition:CGPointMake(0, 0) lineHeight:1 lineWidth:view.width shortLineLength:2 lineSpacing:5 lineColor:[UIColor redColor] isVertical:NO];
-
-    
 }
 
 
