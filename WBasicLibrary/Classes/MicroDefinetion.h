@@ -32,6 +32,8 @@
 #import "UIViewController+BasicHandler.h"
 #import "UIViewController+WebHandler.h"
 #import "UIViewController+TableHandler.h"
+#import "UIAlertController+WHandler.h"
+#import "UIActionSheet+WHandler.h"
 
 
 //==================================== 常用的宏定义 ==========================================
