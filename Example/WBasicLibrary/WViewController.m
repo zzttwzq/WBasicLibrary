@@ -36,6 +36,15 @@
 //    [self.view addSubview:view];
 
 //    [view drawDashLineWithPosition:CGPointMake(0, 0) lineHeight:1 lineWidth:view.width shortLineLength:2 lineSpacing:5 lineColor:[UIColor redColor] isVertical:NO];
+
+
+
+    UIViewController *view = [UIViewController new];
+    view.showLeftBtn = YES;
+
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:view];
+
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 

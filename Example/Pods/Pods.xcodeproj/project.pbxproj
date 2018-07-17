@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		1AB833DDD3B3442E33D2D20695848D6C /* UILabel+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3221FF307F795DA623DEB2C1B1E94163 /* UILabel+WHandler.m */; };
+		1C7FA1AC20FDD163006AF107 /* WNodataView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FA1A920FDD163006AF107 /* WNodataView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FA1AD20FDD163006AF107 /* WNodataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1AA20FDD163006AF107 /* WNodataView.m */; };
+		1C7FA1AE20FDD163006AF107 /* WNodataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1AA20FDD163006AF107 /* WNodataView.m */; };
+		1C7FA1B220FDD5A8006AF107 /* WRequestStatueView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FA1AF20FDD5A8006AF107 /* WRequestStatueView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FA1B320FDD5A8006AF107 /* WRequestStatueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B020FDD5A8006AF107 /* WRequestStatueView.m */; };
+		1C7FA1B420FDD5A8006AF107 /* WRequestStatueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B020FDD5A8006AF107 /* WRequestStatueView.m */; };
+		1C7FA1B720FDD833006AF107 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B520FDD832006AF107 /* Reachability.m */; };
+		1C7FA1B820FDD833006AF107 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B520FDD832006AF107 /* Reachability.m */; };
+		1C7FA1BA20FDD833006AF107 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FA1B620FDD832006AF107 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C8E38A420FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */; };
 		1C8E38A520FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */; };
 		1C8E38A720FCF5FE000BA30A /* UIActionSheet+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8E389F20FCF5FE000BA30A /* UIActionSheet+WHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,6 +75,12 @@
 		12CB56BAC69C0360EECFEAA5C0503C3C /* Pods-WBasicLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WBasicLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		13BFA994352CD3C5B613D6154F598144 /* WBasicLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBasicLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D1813BBC114E8BE8E9478363F2A095 /* UILabel+WHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+WHandler.h"; path = "WBasicLibrary/Classes/UILabel+WHandler.h"; sourceTree = "<group>"; };
+		1C7FA1A920FDD163006AF107 /* WNodataView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WNodataView.h; path = WBasicLibrary/Classes/WNodataView.h; sourceTree = "<group>"; };
+		1C7FA1AA20FDD163006AF107 /* WNodataView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WNodataView.m; path = WBasicLibrary/Classes/WNodataView.m; sourceTree = "<group>"; };
+		1C7FA1AF20FDD5A8006AF107 /* WRequestStatueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WRequestStatueView.h; path = WBasicLibrary/Classes/WRequestStatueView.h; sourceTree = "<group>"; };
+		1C7FA1B020FDD5A8006AF107 /* WRequestStatueView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WRequestStatueView.m; path = WBasicLibrary/Classes/WRequestStatueView.m; sourceTree = "<group>"; };
+		1C7FA1B520FDD832006AF107 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = WBasicLibrary/Classes/Reachability.m; sourceTree = "<group>"; };
+		1C7FA1B620FDD832006AF107 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = WBasicLibrary/Classes/Reachability.h; sourceTree = "<group>"; };
 		1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+WHandler.m"; path = "WBasicLibrary/Classes/UIAlertController+WHandler.m"; sourceTree = "<group>"; };
 		1C8E389F20FCF5FE000BA30A /* UIActionSheet+WHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+WHandler.h"; path = "WBasicLibrary/Classes/UIActionSheet+WHandler.h"; sourceTree = "<group>"; };
 		1C8E38A020FCF5FE000BA30A /* WMessageAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WMessageAction.h; path = WBasicLibrary/Classes/WMessageAction.h; sourceTree = "<group>"; };
@@ -239,13 +254,20 @@
 		FFD0541B2A205B171456E6D59A33CF1F /* WBasicLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				A78BCD0F92732C685341D5DE5E19D1D7 /* WBasicHeader.h */,
+				7A4C8982B9FB18C1ED935DBD1F69E9F7 /* MicroDefinetion.h */,
+				1C7FA1B620FDD832006AF107 /* Reachability.h */,
+				1C7FA1B520FDD832006AF107 /* Reachability.m */,
+				1C7FA1A920FDD163006AF107 /* WNodataView.h */,
+				1C7FA1AA20FDD163006AF107 /* WNodataView.m */,
+				1C7FA1AF20FDD5A8006AF107 /* WRequestStatueView.h */,
+				1C7FA1B020FDD5A8006AF107 /* WRequestStatueView.m */,
 				1C8E389F20FCF5FE000BA30A /* UIActionSheet+WHandler.h */,
 				1C8E38A320FCF5FE000BA30A /* UIActionSheet+WHandler.m */,
 				1C8E38A220FCF5FE000BA30A /* UIAlertController+WHandler.h */,
 				1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */,
 				1C8E38A020FCF5FE000BA30A /* WMessageAction.h */,
 				1C8E38A120FCF5FE000BA30A /* WMessageAction.m */,
-				7A4C8982B9FB18C1ED935DBD1F69E9F7 /* MicroDefinetion.h */,
 				2C9C8FD171BA3DDB576235E2212A0769 /* NSData+AES256_.h */,
 				7729FEBF6C76AF194CB5A388AEBABCDB /* NSData+AES256_.m */,
 				A124F3982D8257410F2481F61A6F6367 /* NSData+Base64_.h */,
@@ -272,7 +294,6 @@
 				68689084D774F348E44354EB1C9F93D1 /* UIViewController+TableHandler.m */,
 				3814917278C2134C2DE3BBCEBF55C112 /* UIViewController+WebHandler.h */,
 				286AD1825D1010F2C573F4D5549297EF /* UIViewController+WebHandler.m */,
-				A78BCD0F92732C685341D5DE5E19D1D7 /* WBasicHeader.h */,
 				297AB6FBEF6E67765A0C421B067C8803 /* Pod */,
 				807B029A3697C797AF402B8695665AD5 /* Support Files */,
 			);
@@ -287,12 +308,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7FA1AC20FDD163006AF107 /* WNodataView.h in Headers */,
 				718B94A1A2FED4B4CC7EC6495B591B44 /* MicroDefinetion.h in Headers */,
 				222E16DE2C5497F80F38F53D9B2B372F /* NSData+AES256_.h in Headers */,
 				8214B15614B16DF3AB2A0FB12E44B98C /* NSData+Base64_.h in Headers */,
 				56697DE2BBACE2F9FCF483839939BE09 /* NSDate+Whandler.h in Headers */,
 				4173283B6E5173B77DBE9EA12AA05846 /* NSMutableArray+WHandler.h in Headers */,
 				7D2A00D6041FABE7E5EDEA52CFD2D889 /* NSObject+Whandler.h in Headers */,
+				1C7FA1B220FDD5A8006AF107 /* WRequestStatueView.h in Headers */,
 				1C8E38AD20FCF5FE000BA30A /* UIAlertController+WHandler.h in Headers */,
 				8D1636AD184327042DE0D8BABBB08EB6 /* NSString+WHandler.h in Headers */,
 				D2080A16B8B569D50F2C6415DD98B839 /* UIColor+Whandler.h in Headers */,
@@ -302,6 +325,7 @@
 				5634F9FB89752FAA800ECC67E8AF9A37 /* UIViewController+BasicHandler.h in Headers */,
 				D2F0F3B4753544F25BD83A2E7721C9F1 /* UIViewController+TableHandler.h in Headers */,
 				940B8A9C148BEA9A513EA6D25E695706 /* UIViewController+WebHandler.h in Headers */,
+				1C7FA1BA20FDD833006AF107 /* Reachability.h in Headers */,
 				5D74796EFA06BC32DC5DE74BD8943F91 /* WBasicHeader.h in Headers */,
 				7325568786353822EC791621D97D822F /* WBasicLibrary-umbrella.h in Headers */,
 				1C8E38A920FCF5FE000BA30A /* WMessageAction.h in Headers */,
@@ -397,10 +421,13 @@
 				D62CF5A7DCA99C83142D752B3027E24A /* UIColor+Whandler.m in Sources */,
 				F6CD91114D5074948A70D61881A7AEF6 /* UIImage+WHandler.m in Sources */,
 				1C8E38AF20FCF5FE000BA30A /* UIActionSheet+WHandler.m in Sources */,
+				1C7FA1B820FDD833006AF107 /* Reachability.m in Sources */,
 				1C8E38A520FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */,
 				1AB833DDD3B3442E33D2D20695848D6C /* UILabel+WHandler.m in Sources */,
 				739B626EC2FBFC935B2F0801488C52FA /* UIView+WHandler.m in Sources */,
+				1C7FA1AE20FDD163006AF107 /* WNodataView.m in Sources */,
 				8325FCC14E38FB0385B18C7E193EE228 /* UIViewController+BasicHandler.m in Sources */,
+				1C7FA1B420FDD5A8006AF107 /* WRequestStatueView.m in Sources */,
 				78692B2FB618F7F89ED9FA404B34A7D0 /* UIViewController+TableHandler.m in Sources */,
 				2C7703CEB1634C34A9A960ED97D97352 /* UIViewController+WebHandler.m in Sources */,
 				2FF6C9668269ADA44DA4A8BBA19C8182 /* WBasicLibrary-dummy.m in Sources */,
@@ -412,7 +439,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C8E38AE20FCF5FE000BA30A /* UIActionSheet+WHandler.m in Sources */,
+				1C7FA1B720FDD833006AF107 /* Reachability.m in Sources */,
+				1C7FA1B320FDD5A8006AF107 /* WRequestStatueView.m in Sources */,
 				3697877A1B0BC4B74539A34B03183702 /* Pods-WBasicLibrary_Example-dummy.m in Sources */,
+				1C7FA1AD20FDD163006AF107 /* WNodataView.m in Sources */,
 				1C8E38A420FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */,
 				1C8E38AA20FCF5FE000BA30A /* WMessageAction.m in Sources */,
 			);

@@ -7,14 +7,42 @@
 
 #import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
+#import "WRequestStatueView.h"
+#import "WNodataView.h"
 
 @interface UIViewController (BasicHandler)
 
-//监听键盘
-@property (nonatomic,assign) BOOL listenKeyBoarderFrameChange;
+/**
+ 设置触摸空白区域是否可以取消输入模式
+ */
+@property (nonatomic,assign) BOOL touchCacncelEditing;
 
-//设置返回按钮
+
+/**
+ 设置触摸空白区域是否可以取消输入模式
+ */
+@property (nonatomic,strong) UITapGestureRecognizer *tapGuesture;
+
+
+/**
+ 设置返回按钮
+ */
 @property (nonatomic,assign) BOOL showLeftBtn;
+
+
+/**
+ 等待加载视图
+ */
+@property (nonatomic,strong) WRequestStatueView *statueView;
+
+
+
+/**
+ 没有数据视图
+ */
+@property (nonatomic,strong) WNodataView *noDataView;
+
+
 
 
 #pragma mark - 跳转到appstore
