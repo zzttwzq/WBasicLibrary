@@ -136,7 +136,7 @@ static const char noDataKey = 'e';
  没有数据视图
  ========================================================================
  */
-- (void) setNoDataView:(UIView *)noDataView
+- (void) setNoDataView:(WNodataView *)noDataView
 {
     objc_setAssociatedObject(self,
                              &noDataKey,
@@ -145,7 +145,7 @@ static const char noDataKey = 'e';
     [self.view addSubview:noDataView];
 }
 
-- (BOOL) showStatueView
+- (WNodataView *) noDataView
 {
     return objc_getAssociatedObject(self, &noDataKey);
 }

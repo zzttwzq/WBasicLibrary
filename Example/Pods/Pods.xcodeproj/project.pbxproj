@@ -17,6 +17,7 @@
 		1C7FA1B720FDD833006AF107 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B520FDD832006AF107 /* Reachability.m */; };
 		1C7FA1B820FDD833006AF107 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FA1B520FDD832006AF107 /* Reachability.m */; };
 		1C7FA1BA20FDD833006AF107 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FA1B620FDD832006AF107 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FA1BB20FDDE8C006AF107 /* MicroDefinetion.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4C8982B9FB18C1ED935DBD1F69E9F7 /* MicroDefinetion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C8E38A420FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */; };
 		1C8E38A520FCF5FE000BA30A /* UIAlertController+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E389E20FCF5FE000BA30A /* UIAlertController+WHandler.m */; };
 		1C8E38A720FCF5FE000BA30A /* UIActionSheet+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8E389F20FCF5FE000BA30A /* UIActionSheet+WHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -337,6 +338,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7FA1BB20FDDE8C006AF107 /* MicroDefinetion.h in Headers */,
 				8D36757DA469BDEE35A84E604FF95E39 /* Pods-WBasicLibrary_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

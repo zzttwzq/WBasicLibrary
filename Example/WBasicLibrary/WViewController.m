@@ -21,7 +21,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 100, 50, 40);
     btn.backgroundColor = [UIColor redColor];

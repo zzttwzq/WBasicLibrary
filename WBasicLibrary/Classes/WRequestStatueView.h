@@ -5,7 +5,7 @@
 //  Created by 吴志强 on 2018/7/17.
 //
 
-#import "WBasicHeader.h"
+#import "MicroDefinetion.h"
 
 //状态
 typedef NS_ENUM(NSInteger,WViewLoadingType) {
@@ -15,6 +15,8 @@ typedef NS_ENUM(NSInteger,WViewLoadingType) {
     WViewLoadingType_LoadSuccess,    //等待状态加载成功
     WViewLoadingType_NoNetWork,      //等待状态无网络
 };
+
+typedef void (^StateBlock)(BOOL state);
 
 @interface WRequestStatueView : UIView
 @property (nonatomic,strong) UIImageView *logoImage;

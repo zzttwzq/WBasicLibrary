@@ -85,7 +85,6 @@
 {
     if (_type == WViewLoadingType_LoadError ||
         _type == WViewLoadingType_IsLoading ||
-        _type == WViewLoadingType_NoData ||
         _type == WViewLoadingType_NoNetWork){
 
             //刷新页面
@@ -137,14 +136,6 @@
 
             self.descriptionLabel.text = @"没有网络啦，建议检查网络是否开启";
             [self.retryBtn setTitle:@"去设置" forState:UIControlStateNormal];
-        }
-        else if (self.type == WViewLoadingType_NoData){
-
-            self.retryBtn.alpha = 0;
-            self.alpha = 1;
-
-            self.descriptionLabel.text = @"这里空空如也~";
-            [self.retryBtn setTitle:@"刷新试试" forState:UIControlStateNormal];
         }
         else if (self.type == WViewLoadingType_LoadSuccess){
 

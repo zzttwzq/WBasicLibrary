@@ -5,13 +5,13 @@
 //  Created by 吴志强 on 2018/7/13.
 //
 
-#import <UIKit/UIKit.h>
 #import <StoreKit/StoreKit.h>
 #import "WRequestStatueView.h"
 #import "WNodataView.h"
 
-@interface UIViewController (BasicHandler)
+@class WNodataView,WRequestStatueView;
 
+@interface UIViewController (BasicHandler)
 /**
  设置触摸空白区域是否可以取消输入模式
  */
@@ -36,13 +36,10 @@
 @property (nonatomic,strong) WRequestStatueView *statueView;
 
 
-
 /**
  没有数据视图
  */
-@property (nonatomic,strong) WNodataView *noDataView;
-
-
+@property (nonatomic,retain) WNodataView *noDataView;
 
 
 #pragma mark - 跳转到appstore
