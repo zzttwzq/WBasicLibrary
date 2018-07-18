@@ -19,7 +19,7 @@
 #import <UIKit/UIKit.h>
 #import <sqlite3.h>
 
-#import "Reachability.h"
+#import "Reachability.h"             //网络库
 #import "NSDate+Whandler.h"          //日期分类
 #import "NSObject+Whandler.h"        //运行时分类
 #import "UIView+WHandler.h"          //view扩展分类
