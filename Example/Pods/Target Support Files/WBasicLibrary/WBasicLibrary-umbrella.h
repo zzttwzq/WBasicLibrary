@@ -18,7 +18,6 @@
 #import "NSObject+Whandler.h"
 #import "NSString+WHandler.h"
 #import "Reachability.h"
-#import "UIActionSheet+WHandler.h"
 #import "UIAlertController+WHandler.h"
 #import "UIColor+Whandler.h"
 #import "UIImage+WHandler.h"
