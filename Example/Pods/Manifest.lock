@@ -1,15 +1,36 @@
 PODS:
-  - WBasicLibrary (0.3.1)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - WBasicLibrary (0.3.5):
+    - AFNetworking
 
 DEPENDENCIES:
   - WBasicLibrary (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   WBasicLibrary:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WBasicLibrary: b21f2a1e16a6bc5ae1b97d51ae6a6adeed724ffc
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  WBasicLibrary: 381d9bee1698d5966487ea0dfffec436ba64c417
 
 PODFILE CHECKSUM: 7c141b8fb749f47fc78d14708ab56cb26939e1ca
 
