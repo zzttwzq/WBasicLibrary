@@ -1,6 +1,6 @@
 {
   "name": "WBasicLibrary",
-  "version": "0.3.5",
+  "version": "0.4.1",
   "summary": "iOS开发基础的扩展库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/zzttwzq/WBasicLibrary",
@@ -13,15 +13,10 @@
   },
   "source": {
     "git": "https://github.com/zzttwzq/WBasicLibrary.git",
-    "tag": "0.3.5"
+    "tag": "0.4.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "WBasicLibrary/Classes/**/*",
-  "dependencies": {
-    "AFNetworking": [
-
-    ]
-  }
+  "source_files": "WBasicLibrary/Classes/**/*"
 }
