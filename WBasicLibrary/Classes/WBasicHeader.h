@@ -9,5 +9,6 @@
 #define WBasicHeader_h
 
 #import "MicroDefinetion.h"
+#import "QuickCode.h"
 
 #endif /* WBasicHeader_h */
