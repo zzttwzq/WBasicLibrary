@@ -215,6 +215,10 @@
 
                     [self setValue:dict[key] forKey:key];
                 }
+                else if ([valueClassString containsString:@"NSNull"]) {
+
+                    [self setValue:nil forKey:key];
+                }
                 else if (dict[key] &&
                     ![dict[key] isKindOfClass:[NSNull class]]) {
 
@@ -246,9 +250,7 @@
 - (void) DEBUGWithTarget:(id)target
                  message:(NSString *)message;
 {
-    #ifdef DEBUG
-        NSLog(@"<! 警告 !> %@ %@",NSStringFromClass([target class]),message);
-    #endif
+    DEBUG_LOG(target, message);
 }
 
 

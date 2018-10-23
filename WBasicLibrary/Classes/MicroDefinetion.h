@@ -58,11 +58,13 @@
 #endif
 
 //显示调试消息
-#define DEBUG_LOG(TARGET,MESSAGE) WLOG(@"<!警告!> %@ %@",TARGET,MESSAGE)
+#define DEBUG_LOG(TARGET,MESSAGE) WLOG(@"<! 警告 !> %@ %@",TARGET,MESSAGE)
 
 #define VIEW_WITH_RECT(x,y,width,height) [[UIView alloc] initWithFrame:CGRectMake(x, y, width, height)]
 #define LABEL_WITH_RECT(x,y,width,height) [[UILabel alloc] initWithFrame:CGRectMake(x, y, width, height)]
 #define IMAGE_WITH_RECT(x,y,width,height) [[UIImageView alloc] initWithFrame:CGRectMake(x, y, width, height)]
+#define TEXTFIELD_WITH_RECT(x,y,width,height) [[UITextField alloc] initWithFrame:CGRectMake(x, y, width, height)]
+#define BUTTON_WITH_RECT(x,y,width,height) [[UIButton alloc] initWithFrame:CGRectMake(x, y, width, height)]
 
 //是否要显示导航页
 #define SHOWNAVPAGE @"SHOWNAVPAGE"
@@ -103,16 +105,8 @@
 //弧度转角度
 #define RADIANS_TO_DEGREES(radians) (radians * (180.0 / M_PI))
 
-
-
-//================================== 显示消息 ==============================================
-#pragma mark - 常用的宏定义
-//================================== 显示消息 ==============================================
-#define SHOW_SUCCESS_MESSAGE(_MESSAGE_) [WMessage showSuccessMessage:_MESSAGE_];
-#define SHOW_INFO_MESSAGE(_MESSAGE_)    [WMessage showInfoMessage:_MESSAGE_];
-#define SHOW_ERROR_MESSAGE(_MESSAGE_)   [WMessage showErrorMessage:_MESSAGE_];
-
-
+#define IMAGE_WITH_NAME(A) [UIImage imageNamed:A]
+#define URL_WITH_STRING(A) [NSURL URLWithString:A]
 
 //================================== block回调 ==============================================
 #pragma mark - 常用的宏定义
@@ -131,6 +125,8 @@ typedef void (^floatCallBack)(float update);
 typedef void (^ImageBlock)(UIImage * _Nullable image);
 //按钮回调
 typedef void (^BtnBlock)(UIButton * _Nullable btn);
+//按钮回调
+typedef void (^Array_Block)(NSArray *array);
 
 
 #endif /* Definetion_h */

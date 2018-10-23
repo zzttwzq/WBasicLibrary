@@ -10,31 +10,36 @@
 @interface UIImage (WHandler)
 #pragma mark - 生成图片
 /**
- 创建一个单色的image
+ 生成单色图片
 
- @param color image的颜色
- @return 返回创建的image
+ @param color 图片的颜色
+ @param size 图片的尺寸
+ @return 返回图片
  */
-+ (UIImage *) imageWithColor:(UIColor*)color;
++ (UIImage *) imageWithColor:(UIColor *)color
+                        size:(CGSize)size;
 
 
 /**
- 创建条形码
+ 生成条形码
 
- @param barCode 条码
- @return 返回创建的image
+ @param barCode 条形码
+ @param size 尺寸
+ @return 返回图片
  */
-+ (CIImage *) imageWithBarCode:(NSString *)barCode;
++ (UIImage *) barCodeImageWithBarCode:(NSString *)barCode
+                                 size:(CGSize)size;
 
 
 /**
- 二维码图片
+ 生成二维码
 
  @param QRCode 二维码
- @return 返回创建的image
+ @param size 尺寸
+ @return 返回图片
  */
-+ (CIImage *) imageWtihQRCode:(NSString *)QRCode;
-
++ (UIImage *) QRCodeImageWithQRCode:(NSString *)QRCode
+                               size:(CGSize)size;
 
 /**
  全屏截图
@@ -46,12 +51,12 @@
 
 #pragma mark - 调整尺寸
 /**
- 缩小图片到一个尺寸
+ 重新调整图片尺寸
 
  @param size 要缩小的尺寸
  @return 返回缩小后的尺寸
  */
-- (UIImage *) scaledToSize:(CGSize)size;
+- (UIImage *)reszie:(CGSize)size;
 
 
 /**

@@ -10,64 +10,75 @@
 @implementation UIImage (WHandler)
 #pragma mark - 生成图片
 /**
- 创建一个单色的image
+ 生成单色图片
 
- @param color image的颜色
- @return 返回创建的image
+ @param color 图片的颜色
+ @param size 图片的尺寸
+ @return 返回图片
  */
-+ (UIImage *) imageWithColor:(UIColor*)color;
++ (UIImage *) imageWithColor:(UIColor *)color
+                        size:(CGSize)size;
 {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetFillColorWithColor(context, [color CGColor]);
     CGContextFillRect(context, rect);
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
+
     return theImage;
 }
 
 
 /**
- 创建条形码
+ 生成条形码
 
- @param barCode 条码
- @return 返回创建的image
+ @param barCode 条形码
+ @param size 尺寸
+ @return 返回图片
  */
-+ (CIImage *) imageWithBarCode:(NSString *)barCode;
++ (UIImage *) barCodeImageWithBarCode:(NSString *)barCode
+                                 size:(CGSize)size;
 {
-    // iOS 8.0以上的系统才支持条形码的生成，iOS8.0以下使用第三方控件生成
-    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+    // 注意生成条形码的编码方式
+    NSData *data = [barCode dataUsingEncoding: NSASCIIStringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
+    [filter setValue:data forKey:@"inputMessage"];
 
-        // 注意生成条形码的编码方式
-        NSData *data = [barCode dataUsingEncoding: NSASCIIStringEncoding];
-        CIFilter *filter = [CIFilter filterWithName:@"CICode128BarcodeGenerator"];
-        [filter setValue:data forKey:@"inputMessage"];
+    // 设置生成的条形码的上，下，左，右的margins的值
+    [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputQuietSpace"];
 
-        // 设置生成的条形码的上，下，左，右的margins的值
-        [filter setValue:[NSNumber numberWithInteger:0] forKey:@"inputQuietSpace"];
-        return filter.outputImage;
-    }else{
+    UIGraphicsBeginImageContext(size);
+    [[UIImage imageWithCIImage:filter.outputImage] drawInRect:CGRectMake(0,0,size.width,size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
 
-        return nil;
-    }
+    return newImage;
 }
 
 
 /**
- 二维码图片
+ 生成二维码
 
  @param QRCode 二维码
- @return 返回创建的image
+ @param size 尺寸
+ @return 返回图片
  */
-+ (CIImage *) imageWtihQRCode:(NSString *)QRCode;
++ (UIImage *) QRCodeImageWithQRCode:(NSString *)QRCode
+                               size:(CGSize)size;
 {
     NSData *data = [QRCode dataUsingEncoding:NSUTF8StringEncoding];
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     [filter setValue:data forKey:@"inputMessage"];
     [filter setValue:@"Q" forKey:@"inputCorrectionLevel"];
 
-    return filter.outputImage;
+    UIGraphicsBeginImageContext(size);
+    [[UIImage imageWithCIImage:filter.outputImage] drawInRect:CGRectMake(0,0,size.width,size.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    return newImage;
 }
 
 
@@ -91,14 +102,15 @@
     return image;
 }
 
+
 #pragma mark - 调整尺寸
 /**
- 缩小图片到一个尺寸
+ 重新调整图片尺寸
 
  @param size 要缩小的尺寸
  @return 返回缩小后的尺寸
  */
-- (UIImage *)scaledToSize:(CGSize)size;
+- (UIImage *)reszie:(CGSize)size;
 {
     UIGraphicsBeginImageContext(size);
     [self drawInRect:CGRectMake(0,0,size.width,size.height)];
@@ -185,6 +197,7 @@
     }
     return data;
 }
+
 
 #pragma mark - 对图片进行模糊处理
 
