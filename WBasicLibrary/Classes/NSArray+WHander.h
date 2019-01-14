@@ -20,6 +20,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (id) safeObjectAtIndex:(NSInteger)index;
 
+
+/**
+ 数组排序 降序 4 3 2 1
+ */
+- (void) desc;
+
+
+/**
+ 数组排序 升序 1 2 3 4
+ */
+- (void) asc;
+
 @end
 
 NS_ASSUME_NONNULL_END

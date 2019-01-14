@@ -26,4 +26,29 @@
     return nil;
 }
 
+
+/**
+ 数组排序 降序 4 3 2 1
+ */
+- (void) desc;
+{
+    [self sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+
+        return [obj2 compare:obj1]; //降序
+    }];
+}
+
+
+/**
+ 数组排序 升序 1 2 3 4
+ */
+- (void) asc;
+{
+    [self sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+
+        return [obj1 compare:obj2]; //升序
+    }];
+}
+
+
 @end
