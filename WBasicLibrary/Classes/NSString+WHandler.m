@@ -445,4 +445,21 @@
         // 如果这个数字和身份证最后一位相同,则符合国家标准,返回YES
     return [str isEqualToString:string];
 }
+
+
+/**
+ 判断密码是否过于简单
+
+ @return 返回值
+ */
+- (BOOL) needChangePass;
+{
+    NSArray *array = @[@"123456",@"111111",@"654321",@"123123",@"222222"];
+    if ([array containsObject:self]) {
+
+        return YES;
+    }
+    return NO;
+}
+
 @end

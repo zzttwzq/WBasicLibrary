@@ -12,7 +12,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-
 #pragma mark - 常用分类
 //系统框架
 #import <Foundation/Foundation.h>
@@ -30,15 +29,15 @@
 #define Adjust_Heght(y) (kScreen_Height == 812.0 ? 667.0 : kScreen_Height) / 667 * y
 #define Adjust_Font(float) [UIFont systemFontOfSize:float * (ScreenHeight == 812.0 ? 667.0 : ScreenHeight) / 667.0]
 
-#define IS_IPHONE_4             [WTool is_Iphone_4]
-#define IS_IPHONE_5             [WTool is_Iphone_5]
-#define IS_IPHONE_6             [WTool is_Iphone_6]
-#define IS_IPHONE_6p            [WTool is_Iphone_6p]
-#define IS_IPHONE_X             [WTool is_Iphone_x]
+#define IS_IPHONE_4             [WDevice is_Iphone_4]
+#define IS_IPHONE_5             [WDevice is_Iphone_5]
+#define IS_IPHONE_6             [WDevice is_Iphone_6]
+#define IS_IPHONE_6p            [WDevice is_Iphone_6p]
+#define IS_IPHONE_X             [WDevice is_Iphone_x]
 
 #define Height_NavContentBar    44.0f
 #define Height_StatusBar        (IS_IPHONE_X==YES)?44.0f: 20.0f
-#define Height_NavBar           [WTool getNavbarHeight]
+#define Height_NavBar           [WDevice getNavbarHeight]
 #define Height_TabBar           (IS_IPHONE_X==YES)?83.0f: 49.0f
 #define Height_Bottom           (IS_IPHONE_X==YES)?34.0f: 0.0f
 
@@ -110,6 +109,8 @@
 #define iOSVersion  [[[UIDevice currentDevice] systemVersion] floatValue]
 
 #define UserDefault [NSUserDefaults standardUserDefaults]
+
+#define RandomWithRange(A,B) [WTool getRandomNumber:A to:B]
 
 //================================== block回调 ==============================================
 #pragma mark - 常用的宏定义

@@ -156,4 +156,11 @@
 - (BOOL) validIDCard;
 
 
+/**
+ 判断密码是否过于简单
+
+ @return 返回值
+ */
+- (BOOL) needChangePass;
+
 @end
