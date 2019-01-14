@@ -21,13 +21,16 @@
  @param iphoneScreen iphone启动页图片数组
  @return 无
  */
-#define appLanuchConfig(storageConfigClassName,routerConfigClassName,networkConfigClassName,userClassName,tabbarClassName,loginClassName,iphonexLanuchScreen,iphoneScreen) \
+#define appLanuchConfig(ShareConfigClassName,HUDConfigClassName,storageConfigClassName,routerConfigClassName,networkConfigClassName,userClassName,tabbarClassName,loginClassName) \
 \
 if (@available(ios 11.0, *)) {[UIScrollView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} \
 \
 self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];\
 \
 \
+[NSClassFromString(ShareConfigClassName) configShare]; \
+\
+[NSClassFromString(HUDConfigClassName) configHUD]; \
 \
 [NSClassFromString(storageConfigClassName) configLocalStorage]; \
 \
@@ -37,19 +40,11 @@ self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, Scre
 \
 \
 \
-if ([NSClassFromString(userClassName) userLogined]) {self.window.rootViewController = [NSClassFromString(tabbarClassName) new];}\
+if ([NSClassFromString(userClassName) isUserLogined]) {self.window.rootViewController = [NSClassFromString(tabbarClassName) new];}\
 \
 else{self.window.rootViewController = [NSClassFromString(loginClassName) new];} \
 \
 [self.window makeKeyAndVisible];\
-\
-\
-\
-\
-if (isIPHoneX) {[WWelcomPage welcomPageWithImages:iphonexLanuchScreen enablePageControl:NO];}\
-\
-else{[WWelcomPage welcomPageWithImages:iphoneScreen enablePageControl:NO];}
-
 
 
 #endif /* QuickCode_h */

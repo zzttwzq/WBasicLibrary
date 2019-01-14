@@ -12,6 +12,12 @@
 		10CBB99E9A97B563430BAE71578D55C8 /* WMessageAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 99654734DA368B03FD7B7C4CD1128BF5 /* WMessageAction.m */; };
 		1C1EBDE5217EFC5D001B0E6E /* QuickCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1EBDE4217EFC5D001B0E6E /* QuickCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C1EBDE6217EFC5D001B0E6E /* QuickCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1EBDE4217EFC5D001B0E6E /* QuickCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FBE9321EC6A2D0041B180 /* UIImageView+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FBE8F21EC6A2C0041B180 /* UIImageView+WHandler.m */; };
+		1C7FBE9421EC6A2D0041B180 /* NSArray+WHander.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FBE9021EC6A2D0041B180 /* NSArray+WHander.m */; };
+		1C7FBE9521EC6A2D0041B180 /* UIImageView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FBE9121EC6A2D0041B180 /* UIImageView+WHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FBE9621EC6A2D0041B180 /* NSArray+WHander.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FBE9221EC6A2D0041B180 /* NSArray+WHander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FBE9721EC6A6B0041B180 /* NSArray+WHander.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FBE9221EC6A2D0041B180 /* NSArray+WHander.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C7FBE9821EC6A710041B180 /* UIImageView+WHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C7FBE9121EC6A2D0041B180 /* UIImageView+WHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		237F96EFB2070CC489B8012627651FB0 /* NSObject+Whandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 66F17EE13B93527171E69AF5FB8522DD /* NSObject+Whandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		27B2B34565223D89781743A63A24875E /* WBasicLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFC380B0262AB09794FC0E3FE2F03C98 /* WBasicLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2EDF63FFF9AFA8B74D3E4A0E7BDA6E7F /* UIImage+WHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE8677F89444C028B9190A9BB16D123 /* UIImage+WHandler.m */; };
@@ -72,6 +78,10 @@
 		13BFA994352CD3C5B613D6154F598144 /* WBasicLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBasicLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		158166C5ADED2425C40A850D8BCBCA09 /* WBasicLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WBasicLibrary.modulemap; sourceTree = "<group>"; };
 		1C1EBDE4217EFC5D001B0E6E /* QuickCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuickCode.h; path = WBasicLibrary/Classes/QuickCode.h; sourceTree = "<group>"; };
+		1C7FBE8F21EC6A2C0041B180 /* UIImageView+WHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WHandler.m"; path = "WBasicLibrary/Classes/UIImageView+WHandler.m"; sourceTree = "<group>"; };
+		1C7FBE9021EC6A2D0041B180 /* NSArray+WHander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+WHander.m"; path = "WBasicLibrary/Classes/NSArray+WHander.m"; sourceTree = "<group>"; };
+		1C7FBE9121EC6A2D0041B180 /* UIImageView+WHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WHandler.h"; path = "WBasicLibrary/Classes/UIImageView+WHandler.h"; sourceTree = "<group>"; };
+		1C7FBE9221EC6A2D0041B180 /* NSArray+WHander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+WHander.h"; path = "WBasicLibrary/Classes/NSArray+WHander.h"; sourceTree = "<group>"; };
 		23B8F8CCADDA5670CD1A9423FF2AB455 /* NSData+AES256_.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES256_.m"; path = "WBasicLibrary/Classes/NSData+AES256_.m"; sourceTree = "<group>"; };
 		257E48599AB2FA63F39F7615BBA2C0B6 /* UIColor+Whandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Whandler.h"; path = "WBasicLibrary/Classes/UIColor+Whandler.h"; sourceTree = "<group>"; };
 		268701F386BB83015D5AA4494163C81D /* WBasicLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WBasicLibrary-dummy.m"; sourceTree = "<group>"; };
@@ -232,8 +242,12 @@
 			isa = PBXGroup;
 			children = (
 				2ECD094C11E00E38490A6C169BEA117C /* WBasicHeader.h */,
-				1C1EBDE4217EFC5D001B0E6E /* QuickCode.h */,
 				ED48D63D92AA0CF7F6B7E49F9E29D0BE /* MicroDefinetion.h */,
+				1C1EBDE4217EFC5D001B0E6E /* QuickCode.h */,
+				1C7FBE9221EC6A2D0041B180 /* NSArray+WHander.h */,
+				1C7FBE9021EC6A2D0041B180 /* NSArray+WHander.m */,
+				1C7FBE9121EC6A2D0041B180 /* UIImageView+WHandler.h */,
+				1C7FBE8F21EC6A2C0041B180 /* UIImageView+WHandler.m */,
 				F9EF5328DD4E8A319F91F4378750A3A0 /* NSData+AES256_.h */,
 				23B8F8CCADDA5670CD1A9423FF2AB455 /* NSData+AES256_.m */,
 				A9684A4754C2D7E515033375BF0A396F /* NSData+Base64_.h */,
@@ -300,8 +314,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7FBE9521EC6A2D0041B180 /* UIImageView+WHandler.h in Headers */,
 				8D36757DA469BDEE35A84E604FF95E39 /* Pods-WBasicLibrary_Example-umbrella.h in Headers */,
 				1C1EBDE5217EFC5D001B0E6E /* QuickCode.h in Headers */,
+				1C7FBE9621EC6A2D0041B180 /* NSArray+WHander.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +325,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7FBE9821EC6A710041B180 /* UIImageView+WHandler.h in Headers */,
 				754B579447A9607C7BB1A7F9FEDC865B /* MicroDefinetion.h in Headers */,
 				1C1EBDE6217EFC5D001B0E6E /* QuickCode.h in Headers */,
 				5C05E6E3E85F0D084D01FCB8F43887C1 /* NSData+AES256_.h in Headers */,
@@ -330,6 +347,7 @@
 				27B2B34565223D89781743A63A24875E /* WBasicLibrary-umbrella.h in Headers */,
 				AD4404316926DA047359F1F43AC511B1 /* WMessageAction.h in Headers */,
 				35649B354F63124D6396F50C78AD11C9 /* WNodataView.h in Headers */,
+				1C7FBE9721EC6A6B0041B180 /* NSArray+WHander.h in Headers */,
 				8C98152B846426015CADC4217DDA5BD1 /* WRequestStatueView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3697877A1B0BC4B74539A34B03183702 /* Pods-WBasicLibrary_Example-dummy.m in Sources */,
+				1C7FBE9321EC6A2D0041B180 /* UIImageView+WHandler.m in Sources */,
+				1C7FBE9421EC6A2D0041B180 /* NSArray+WHander.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

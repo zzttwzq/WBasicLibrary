@@ -60,7 +60,7 @@
 
 
 /**
- 调整生成的图片的大小
+ 调整 CIImage
 
  @param image 要缩小的图片
  @param size 要缩小的尺寸
@@ -81,32 +81,50 @@
 
 
 #pragma mark - 对图片进行模糊处理
+/**
+ 图片模糊处理
 
-    // CIGaussianBlur ---> 高斯模糊
+ @param name 模糊方式
+ // CIGaussianBlur ---> 高斯模糊
+ // CIBoxBlur      ---> 均值模糊(Available in iOS 9.0 and later)
+ // CIDiscBlur     ---> 环形卷积模糊(Available in iOS 9.0 and later)
+ // CIMedianFilter ---> 中值模糊, 用于消除图像噪点, 无需设置radius(Available in iOS 9.0 and later)
+ // CIMotionBlur   ---> 运动模糊, 用于模拟相机移动拍摄时的扫尾效果(Available in iOS 9.0 and later)
 
-    // CIBoxBlur      ---> 均值模糊(Available in iOS 9.0 and later)
-
-    // CIDiscBlur     ---> 环形卷积模糊(Available in iOS 9.0 and later)
-
-    // CIMedianFilter ---> 中值模糊, 用于消除图像噪点, 无需设置radius(Available in iOS 9.0 and later)
-
-    // CIMotionBlur   ---> 运动模糊, 用于模拟相机移动拍摄时的扫尾效果(Available in iOS 9.0 and later)
-+ (UIImage *)blurWithOriginalImage:(UIImage *)image
-                          blurName:(NSString *)name
-                            radius:(NSInteger)radius;
+ @param radius 模糊度
+ @return 返回图片
+ */
+- (UIImage *) imageBlurWithName:(NSString *)name
+                         radius:(NSInteger)radius;
 
 
 /**
  *  调整图片饱和度, 亮度, 对比度
  *
- *  @param image      目标图片
- *  @param saturation 饱和度
+ *  @param saturation 饱和度 0 ~ 1.0
  *  @param brightness 亮度: -1.0 ~ 1.0
- *  @param contrast   对比度
+ *  @param contrast   对比度 0 ~ 1.0
  *
  */
-+ (UIImage *)colorControlsWithOriginalImage:(UIImage *)image
-                                 saturation:(CGFloat)saturation
-                                 brightness:(CGFloat)brightness
-                                   contrast:(CGFloat)contrast;
+- (UIImage *) imageSaturation:(CGFloat)saturation
+                   brightness:(CGFloat)brightness
+                     contrast:(CGFloat)contrast;
+
+
+/**
+ 调整图片效果
+
+ @param name 图片效果
+ // 怀旧 --> CIPhotoEffectInstant                         单色 --> CIPhotoEffectMono
+ // 黑白 --> CIPhotoEffectNoir                            褪色 --> CIPhotoEffectFade
+ // 色调 --> CIPhotoEffectTonal                           冲印 --> CIPhotoEffectProcess
+ // 岁月 --> CIPhotoEffectTransfer                        铬黄 --> CIPhotoEffectChrome
+
+ @return 返回图片
+ */
+- (UIImage *) imageEffectWithName:(NSString *)name;
+
+
+
+
 @end

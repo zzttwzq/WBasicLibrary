@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WBasicLibrary'
-  s.version          = '0.4.3'
+  s.version          = '0.4.5'
   s.summary          = 'iOS开发基础的扩展库'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/zzttwzq/WBasicLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'WBasicLibrary/Classes/**/*'
   
