@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MicroDefinetion.h"
+#import "WBasicHeader.h"
 
 @interface NSString (WHandler)
 
