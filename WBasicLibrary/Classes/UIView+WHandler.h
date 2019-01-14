@@ -66,8 +66,8 @@
  @param rect 位置
  @param color 颜色
  */
-- (void) addLineWithRect:(CGRect)rect
-                   color:(UIColor *)color;
+- (UIView *) addLineWithRect:(CGRect)rect
+                       color:(UIColor *)color;
 
 /**
  添加虚化效果
@@ -77,4 +77,28 @@
 - (void) addBlurEffectStyle:(UIBlurEffectStyle)effects;
 
 
+/**
+ 生成阴影view
+
+ @param frame frame
+ @param color 颜色
+ @param offset 阴影扩散范围
+ @param radius 阴影弧度
+ @return 返回view
+ */
++ (UIView *) viewWithFrame:(CGRect)frame
+                     color:(UIColor *)color
+                    offset:(CGSize)offset
+                    radius:(float)radius;
+
+/**
+ 生成阴影
+ 
+ @param color 颜色
+ @param offset 阴影扩散范围
+ @param radius 阴影弧度
+ */
+- (void) shadowWithColor:(UIColor *)color
+                  offset:(CGSize)offset
+                  radius:(float)radius;
 @end

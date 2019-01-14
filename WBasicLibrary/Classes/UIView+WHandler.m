@@ -201,13 +201,15 @@
  @param rect 位置
  @param color 颜色
  */
--(void)addLineWithRect:(CGRect)rect
+- (UIView *) addLineWithRect:(CGRect)rect
                  color:(UIColor *)color;
 {
     UIView *line = [[UIView alloc] initWithFrame:rect];
     line.backgroundColor = color;
 
     [self addSubview:line];
+
+    return line;
 }
 
 
@@ -224,4 +226,47 @@
 
     [self addSubview:effectView];
 }
+
+
+/**
+ 生成阴影view
+
+ @param frame frame
+ @param color 颜色
+ @param offset 阴影扩散范围
+ @param radius 阴影弧度
+ @return 返回view
+ */
++ (UIView *) viewWithFrame:(CGRect)frame
+                     color:(UIColor *)color
+                    offset:(CGSize)offset
+                    radius:(float)radius;
+{
+    UIView *view = [[UIView alloc] initWithFrame:frame];
+    view.layer.shadowColor = color.CGColor;
+    view.layer.shadowOffset = offset;
+    view.layer.shadowOpacity = 0.5;
+    view.layer.shadowRadius = radius;
+
+    return view;
+}
+
+
+/**
+ 生成阴影
+
+ @param color 颜色
+ @param offset 阴影扩散范围
+ @param radius 阴影弧度
+ */
+- (void) shadowWithColor:(UIColor *)color
+                offset:(CGSize)offset
+                radius:(float)radius;
+{
+    self.layer.shadowColor = color.CGColor;
+    self.layer.shadowOffset = offset;
+    self.layer.shadowOpacity = 0.5;
+    self.layer.shadowRadius = radius;
+}
+
 @end

@@ -217,7 +217,7 @@
                 }
                 else if ([valueClassString containsString:@"NSNull"]) {
 
-                    [self setValue:nil forKey:key];
+//                    [self setValue:nil forKey:key];
                 }
                 else if (dict[key] &&
                     ![dict[key] isKindOfClass:[NSNull class]]) {
@@ -290,12 +290,7 @@
 
 // 重写setValue:forUndefinedKey:方法
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key {
-    NSLog(@"key = %@, value = %@", key, value);
+//    WLOG(@"key = %@, value = %@", key, value);
 }
-
-//- (void)setValue:(id)value forKey:(NSString *)key
-//{
-//
-//}
 
 @end
