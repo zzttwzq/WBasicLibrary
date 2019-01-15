@@ -39,7 +39,7 @@
 #define Height_StatusBar        (IS_IPHONE_X==YES)?44.0f: 20.0f
 #define Height_NavBar           [WDevice getNavbarHeight]
 #define Height_TabBar           (IS_IPHONE_X==YES)?83.0f: 49.0f
-#define Height_Bottom           (IS_IPHONE_X==YES)?34.0f: 0.0f
+#define Height_Bottom           [WDevice getBottomHeight]
 
 #ifdef DEBUG
 

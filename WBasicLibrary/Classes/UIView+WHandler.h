@@ -18,7 +18,7 @@
 @property (nonatomic,assign) CGFloat height;      ///< Shortcut for frame.size.height.
 @property (nonatomic,assign) CGFloat centerX;
 @property (nonatomic,assign) CGFloat centerY;
-@property (nonatomic,assign) CGSize size;
+//@property (nonatomic,assign) CGSize size;
 
 #pragma mark - 子视图操作
 /**
