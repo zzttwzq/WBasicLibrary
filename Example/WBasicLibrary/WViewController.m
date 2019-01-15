@@ -38,8 +38,8 @@
 //    [view drawDashLineWithPosition:CGPointMake(0, 0) lineHeight:1 lineWidth:view.width shortLineLength:2 lineSpacing:5 lineColor:[UIColor redColor] isVertical:NO];
 
 
-    NSArray *array = @[];
-    [array safeObjectAtIndex:1];
+//    NSArray *array = @[];
+//    [array safeObjectAtIndex:1];
 
     UIViewController *view = [UIViewController new];
 //    view.showLeftBtn = YES;

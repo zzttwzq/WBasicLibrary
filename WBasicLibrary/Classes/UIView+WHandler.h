@@ -19,8 +19,6 @@
 @property (nonatomic,assign) CGFloat centerX;
 @property (nonatomic,assign) CGFloat centerY;
 @property (nonatomic,assign) CGSize size;
-@property (nonatomic,assign) CGPoint center;
-
 
 #pragma mark - 子视图操作
 /**

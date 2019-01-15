@@ -39,7 +39,6 @@
 
     CGSize labSize = [text sizeWithFont:font maxSize:maxSize];
 
-
     //判断是否需要自动调整宽度
     if (!autoWith) {
 

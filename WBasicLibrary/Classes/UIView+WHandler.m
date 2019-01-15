@@ -80,16 +80,6 @@
     self.frame = frame;
 }
 
-- (CGPoint) center {
-    return self.frame.origin;
-}
-
-- (void) setCenter:(CGPoint)center {
-    CGRect frame = self.frame;
-    frame.origin = center;
-    self.frame = frame;
-}
-
 - (CGFloat) centerX
 {
     return self.center.x;
