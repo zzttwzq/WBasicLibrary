@@ -84,7 +84,7 @@
 #define RandomColor RGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 #define WINDOW_COLOR [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4]
 
-//弱引用
+//弱引用 
 #define WEAK_SELF(Class) typeof(Class *)weakSelf = self;
 
 //拨打电话
