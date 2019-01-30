@@ -7,14 +7,14 @@
 
 #import <WBasicLibrary/WBasicHeader.h>
 
-typedef NS_ENUM(NSInteger,WThreadSExcutionType) {
-    WThreadType_SYNC,                    //同步执行
+typedef NS_ENUM(NSInteger,WThreadSExcutionTypes) {
+    WThreadTypes_SYNC,                    //同步执行
     WThreadType_ASYNC,                   //异步执行
 };
 
-typedef NS_ENUM(NSInteger,WThreadQueueType) {
-    WThreadType_SERIAL,                  //串行队列
-    WThreadType_CONCURRENT,              //并行队列
+typedef NS_ENUM(NSInteger,WThreadQueueTypes) {
+    WThreadTypes_SERIAL,                  //串行队列
+    WThreadTypes_CONCURRENT,              //并行队列
 };
 
 
@@ -110,7 +110,7 @@ typedef NS_ENUM(NSInteger,WThreadQueueType) {
 
  @param queueType 队列类型（chuan x）
  */
-+(dispatch_queue_t)getQueueWithType:(WThreadQueueType)queueType;
++(dispatch_queue_t)getQueueWithType:(WThreadQueueTypes)queueType;
 
 
 /**
@@ -120,7 +120,7 @@ typedef NS_ENUM(NSInteger,WThreadQueueType) {
  @param queue 要执行的对象队列
  @param excutionBlock 执行的操作
  */
-+(void)startTaskWithType:(WThreadSExcutionType)excutionType
++(void)startTaskWithType:(WThreadSExcutionTypes)excutionType
                    queue:(dispatch_queue_t)queue
            excutionBlock:(BlankBlock)excutionBlock;
 

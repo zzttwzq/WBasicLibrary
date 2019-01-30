@@ -250,9 +250,9 @@ static dispatch_once_t once;
 
  @param queueType 队列类型（chuan x）
  */
-+(dispatch_queue_t)getQueueWithType:(WThreadQueueType)queueType;
++(dispatch_queue_t)getQueueWithType:(WThreadQueueTypes)queueType;
 {
-    if (queueType == WThreadType_SERIAL) {
+    if (queueType == WThreadTypes_SERIAL) {
 
             //串行队列的创建方法(主动创建)
         return dispatch_queue_create("net.zzttwzq.top", DISPATCH_QUEUE_SERIAL);
@@ -277,11 +277,11 @@ static dispatch_once_t once;
  @param queue 要执行的对象队列
  @param excutionBlock 执行的操作
  */
-+(void)startTaskWithType:(WThreadSExcutionType)excutionType
++(void)startTaskWithType:(WThreadSExcutionTypes)excutionType
                    queue:(dispatch_queue_t)queue
            excutionBlock:(BlankBlock)excutionBlock;
 {
-    if (excutionType == WThreadType_SYNC) {
+    if (excutionType == WThreadTypes_SYNC) {
 
         dispatch_sync(queue, ^{
 
