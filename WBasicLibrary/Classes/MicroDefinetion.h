@@ -131,6 +131,8 @@ typedef void (^ImageBlock)(UIImage * _Nullable image);
 typedef void (^BtnBlock)(UIButton * _Nullable btn);
 //按钮回调
 typedef void (^Array_Block)(NSArray *array);
+//字典信息回调
+typedef void(^Dict_Block)(NSDictionary *dict);
 //按钮回调
 typedef void (^ButtonBlock)(UIButton *btn);
 
